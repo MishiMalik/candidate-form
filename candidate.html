@@ -1,0 +1,990 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- CSS CDN -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+
+                <div class="form__container">
+                    <div class="title__container">
+                        <h1>Candidate</h1>
+                        <p class="top-text">Follow the simple steps to complete your mapping</p>
+                    </div>
+                    <div class="body__container">
+                        <div class="left__container d-none ">
+                            <div class="side__titles mt-2">
+                                <div class="title__name ">
+                                    <h3>Personal Information</h3>
+                                </div>
+                                <div class="title__name">
+                                    <h3>Preferences</h3>
+                                </div>
+                                <div class="title__name">
+                                    <h3>Languages</h3>
+                                </div>
+                                <div class="title__name">
+                                    <h3>Skills</h3>
+                                </div>
+                                <div class="title__name">
+                                    <h3>Availability</h3>
+                                </div>
+                            </div>
+                            <div class="progress__bar__container">
+                                <ul>
+                                    <li class="active" id="icon1"><ion-icon name="person-outline"></ion-icon></li>
+                                    <li id="icon2"><ion-icon name="happy-outline"></ion-icon></li>
+                                    <li id="icon3"><ion-icon name="language-outline"></ion-icon></li>
+                                    <li id="icon4"><ion-icon name="layers-outline"></ion-icon></li>
+                                    <li id="icon5"><ion-icon name="accessibility-outline"></ion-icon></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="right__container ">
+                            <fieldset id="form1" class="">
+                                <div class="sub__title__container mt-3">
+                                    <!-- <p class="mb-0">Step 1/5</p> -->
+                                    <h2 class="mb-3">Let's start with your Personal Information</h2>
+                                </div>
+                                <div class="input__container">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label for="name">First Name</label><br>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="name">Last Name</label><br>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="name">Email</label><br>
+                                            <input type="email">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="name">Phone</label><br>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="name">Zip Code</label><br>
+                                            <input type="text">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label>Gender:</label><br>
+                                                <div class="form-check form-check-inline mt-2">
+                                                    <input class="form-check-input" type="radio" name="gender"
+                                                        id="male">
+                                                    <label class="form-check-label" for="male">Male</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gender"
+                                                        id="female">
+                                                    <label class="form-check-label" for="female">Female</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gender"
+                                                        id="trans">
+                                                    <label class="form-check-label" for="trans">Trans</label>
+                                                </div>
+                                                <div class="form-check form-check-inline">
+                                                    <input class="form-check-input" type="radio" name="gender"
+                                                        id="other">
+                                                    <label class="form-check-label" for="other">Other</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <a class="nxt__btn ms-auto " onclick="nextForm();"> Next</a>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="active__form w-100 " id="form2">
+                                <div class="accordion w-100 mt-3" id="accordionExample">
+                                    <div class="accordion-item w-100 mb-3">
+                                        <h2 class="accordion-header w-100" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                <div class="sub__title__container">
+                                                    <h2>Preferences </h2>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="input__container">
+                                                    <div class="row">
+                                                        <div class="col-lg-8">
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label" for="distance">Travel
+                                                                    Distance:
+                                                                </label>
+                                                                <div class="d-flex  flex-wrap ">
+                                                                    <div class="form-check me-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            id="1-m" name="t-distance" />
+                                                                        <label class="form-check-label" for="1-m"> 1
+                                                                            mile </label>
+                                                                    </div>
+                                                                    <div class="form-check me-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            id="5-m" name="t-distance" />
+                                                                        <label class="form-check-label" for="5-m"> 5
+                                                                            mile </label>
+                                                                    </div>
+                                                                    <div class="form-check me-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            id="10-m" name="t-distance" />
+                                                                        <label class="form-check-label" for="10-m"> 10
+                                                                            mile </label>
+                                                                    </div>
+                                                                    <div class="form-check ">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            id="20-m" name="t-distance" />
+                                                                        <label class="form-check-label" for="20-m"> 20
+                                                                            mile </label>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <select class="form-select" name="distance"
+                                                                    aria-label="Distance preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="1">1 mile</option>
+                                                                    <option value="5">5 miles</option>
+                                                                    <option value="10">10 miles</option>
+                                                                    <option value="20">20 miles</option>
+                                                                    <option value="50">50 miles</option>
+                                                                </select> -->
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col-lg-4 mb-1">
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label" for="smoking">Smoking:
+                                                                </label>
+                                                                <!-- <select class="form-select" name="smoking"
+                                                                    aria-label="Smoking preference">
+                                                                    <option value="0">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="smoking" id="yes" />
+                                                                        <label class="form-check-label" for="yes"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="smoking" id="no" />
+                                                                        <label class="form-check-label" for="no"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mb-1">
+
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label" for="driving">Driving:
+                                                                </label>
+                                                                <!-- <select class="form-select" name="driving"
+                                                                    aria-label="Driving preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex  ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="driving" id="yes1" />
+                                                                        <label class="form-check-label" for="yes1"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="driving" id="no1" />
+                                                                        <label class="form-check-label" for="no1"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="col-lg-4 mb-1">
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label"
+                                                                    for="geriatric">Geriatric: </label>
+                                                                <!-- <select class="form-select" name="geriatric"
+                                                                    aria-label="Geriatric preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex  ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="geriatric" id="yes2" />
+                                                                        <label class="form-check-label" for="yes2"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="geriatric" id="no2" />
+                                                                        <label class="form-check-label" for="no2"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mb-1">
+
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label"
+                                                                    for="pediatric">Pediatric: </label>
+                                                                <!-- <select class="form-select" name="pediatric"
+                                                                    aria-label="Pediatric preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex  ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="pediatric" id="yes3" />
+                                                                        <label class="form-check-label" for="yes3"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="pediatric" id="no3" />
+                                                                        <label class="form-check-label" for="no3"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mb-1">
+
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label" for="adult">Adult:
+                                                                </label>
+                                                                <!-- <select class="form-select" name="adult" aria-label="Adult preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex  ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="Adult" id="yes4" />
+                                                                        <label class="form-check-label" for="yes4"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="Adult" id="no4" />
+                                                                        <label class="form-check-label" for="no4"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mb-1">
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label" for="mental">Mental
+                                                                    Disability:
+                                                                </label>
+                                                                <!-- <select class="form-select" name="mental"
+                                                                    aria-label="Mental disability preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex  ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="mental-disability" id="yes5" />
+                                                                        <label class="form-check-label" for="yes5"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="mental-disability" id="no5" />
+                                                                        <label class="form-check-label" for="no5"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4 mb-1">
+                                                            <div class="form-check ps-0">
+                                                                <label class="form-check-label" for="physical">Physical
+                                                                    Disability:
+                                                                </label>
+                                                                <!-- <select class="form-select" name="physical"
+                                                                    aria-label="Physical disability preference">
+                                                                    <option value="0" selected="">No preference</option>
+                                                                    <option value="-1">No</option>
+                                                                    <option value="1">Yes</option>
+                                                                </select> -->
+                                                                <div class="d-flex  ">
+                                                                    <div class="form-check">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="physical-disablity" id="yes6" />
+                                                                        <label class="form-check-label" for="yes6"> Yes
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="physical-disablity" id="no6" />
+                                                                        <label class="form-check-label" for="no6"> No
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item w-100 mb-3">
+                                        <h2 class="accordion-header w-100" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                <div class="sub__title__container">
+                                                    <!-- <p class="mb-0">Step 3/5</p> -->
+                                                    <h2>Languages</h2>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+
+                                                <div class="input__container">
+                                                    <div class="row w-100">
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="English" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="English">English</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Spanish" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Spanish">Spanish</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Italian" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Italian">Italian</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Japanese" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Japanese">Japanese</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Cantonese" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Cantonese">Cantonese</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Mandarin" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Mandarin">Mandarin</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Hindi" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Hindi">Hindi</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Arabic" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Arabic">Arabic</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Russian" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Russian">Russian</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="French" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="French">French</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Portuguese" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Portuguese">Portuguese</label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item w-100 mb-3">
+                                        <h2 class="accordion-header w-100" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                <div class="sub__title__container">
+                                                    <!-- <p class="mb-0">Step 4/5</p> -->
+                                                    <h2>Skills:</h2>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="input__container">
+                                                    <div class="row w-100">
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Parkinsons">Parkinsons</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Alzheimers" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Alzheimers">Alzheimers</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Dementia" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Dementia">Dementia</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Certifications" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Certifications">Certifications</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Experienced" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Experienced">Experienced</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item w-100 mb-3">
+                                        <h2 class="accordion-header w-100" id="headingfour">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                                aria-expanded="false" aria-controls="collapsefour">
+                                                <div class="sub__title__container">
+                                                    <h2>Availability</h2>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapsefour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="input__container">
+                                                    <div class="row w-100">
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Live In" value="1" checked="">
+                                                                <label class="form-check-label" for="line in">Live
+                                                                    In</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Companion" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Companion">Companion</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Weekend Warrior" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Weekend Warrior">Weekend
+                                                                    Warrior</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Overnight" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Overnight">Overnight</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Part Time" value="1" checked="">
+                                                                <label class="form-check-label" for="Part Time">Part
+                                                                    Time</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-3">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Flexible Schedules" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Flexible Schedules">Flexible
+                                                                    Schedules</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="buttons mt-4">
+                                    <a class="prev__btn" onclick="prevForm();">Back</a>
+                                    <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Submit</a>
+                                </div>
+                            </fieldset>
+
+                            <fieldset class="active__form w-100 pt-0 " id="form3">
+                                <div class="sub__title__container pt-0  ">
+                                    <h2 class="pt-0 text-primary ">Thanks For Submitting Information.</h2>
+                                    <hr>
+                                    <h4 class="mb-0 pb-0 match-roles mt-2">Found 39 matching roles</h4>
+                                </div>
+                                <div class="table-responsive w-100 mt-3">
+                                    <table class="paleBlueRows w-100">
+                                        <tbody>
+                                            <tr>
+                                                <th>View</th>
+                                                <th>Role</th>
+                                                <th>Location</th>
+                                                <th>Distance</th>
+                                                <th>Min</th>
+                                                <th>Max</th>
+                                                <th>Action</th>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>6</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action1"
+                                                                id="yes" />
+                                                            <label class="form-check-label" for="yes"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action1"
+                                                                id="no" />
+                                                            <label class="form-check-label" for="no"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=6178E7D6-8A9B-6315-3607-588AB5CDCA66">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>2</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action2"
+                                                                id="yes2" />
+                                                            <label class="form-check-label" for="yes2"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action2"
+                                                                id="no2" />
+                                                            <label class="form-check-label" for="no2"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=085A7467-736D-04C2-6899-11B03FAB1442">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>9</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action3"
+                                                                id="yes3" />
+                                                            <label class="form-check-label" for="yes3"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action3"
+                                                                id="no3" />
+                                                            <label class="form-check-label" for="no3"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=07B5614E-A19E-3179-527A-CED8477DAF6A">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>2</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action4"
+                                                                id="yes4" />
+                                                            <label class="form-check-label" for="yes4"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action4"
+                                                                id="no4" />
+                                                            <label class="form-check-label" for="no4"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=BCD92CA8-AC40-ABD1-9186-B719FD3776A1">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>9</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action10"
+                                                                id="yes10" />
+                                                            <label class="form-check-label" for="yes10"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action10"
+                                                                id="no10" />
+                                                            <label class="form-check-label" for="no10"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=601ECB02-2DD1-0601-239D-2ED39A5FB477">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>14</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action11"
+                                                                id="yes11" />
+                                                            <label class="form-check-label" for="yes11"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action11"
+                                                                id="no11" />
+                                                            <label class="form-check-label" for="no11"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=720002BB-6CF7-FE3B-093A-4E4625F992D1">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>2</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action12"
+                                                                id="yes12" />
+                                                            <label class="form-check-label" for="yes12"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action12"
+                                                                id="no12" />
+                                                            <label class="form-check-label" for="no12"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=ACD94352-7ACD-9107-D4E8-C0DB8FBE81B4">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>18</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action13"
+                                                                id="yes13" />
+                                                            <label class="form-check-label" for="yes13"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action13"
+                                                                id="no13" />
+                                                            <label class="form-check-label" for="no13"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=C1BBB2EA-201A-355F-81CB-341C82EC3ABA">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>7</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action14"
+                                                                id="yes14" />
+                                                            <label class="form-check-label" for="yes14"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action14"
+                                                                id="no14" />
+                                                            <label class="form-check-label" for="no14"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=711E894E-3516-E57B-717D-288B33A9F414">View</a>
+                                                </td>
+                                                <td>Caregiver with Personal Care Experience</td>
+                                                <td>US-WI-West Bend</td>
+                                                <td>7</td>
+                                                <td>USD $17.00/Hr.</td>
+                                                <td>USD $21.00/Hr.</td>
+                                                <td>
+                                                    <div class="d-flex justify-content-center ">
+                                                        <div class="form-check">
+                                                            <input class="form-check-input" type="radio" name="action15"
+                                                                id="yes15" />
+                                                            <label class="form-check-label" for="yes15"> Yes </label>
+                                                        </div>
+                                                        <div class="form-check ms-3">
+                                                            <input class="form-check-input" type="radio" name="action15"
+                                                                id="no15" />
+                                                            <label class="form-check-label" for="no15"> No </label>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="map-div mt-4">
+                                    <div
+                                        style="text-decoration:none; overflow:hidden;max-width:100%;width:100%;height:300px;">
+                                        <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe
+                                                style="height:100%;width:100%;border:0;" frameborder="0"
+                                                src="https://www.google.com/maps/embed/v1/place?q=US&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                        </div><a class="google-map-code-enabler"
+                                            href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium
+                                            bootstrap themes</a>
+                                        <style>
+                                            #g-mapdisplay .text-marker {}
+
+                                            .map-generator {
+                                                max-width: 100%;
+                                                max-height: 100%;
+                                                background: none;
+                                        </style>
+                                    </div>
+                                </div>
+
+                                <div class="buttons mt-4">
+                                    <a class="prev__btn" onclick="prevForm();">Back</a>
+                                    <a class="nxt__btn" onclick="nextForm();">Next</a>
+                                </div>
+
+                            </fieldset>
+
+                            <fieldset class="active__form w-100 pt-0 " id="form4">
+                                <div class="sub__title__container pt-0 mb-2 ">
+                                    <h2 class="pt-0 text-primary ">Schedule an Interview</h2>
+                                    <p class="mb-0 pb-0 match-roles  ">You can Select a date and time for
+                                        an
+                                        interview</p>
+
+                                        <hr>
+                                </div>
+                                <div class="input__container mt-3">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <label for="name">Select Date</label><br>
+                                            <input type="date">
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <label for="name">Select Time</label><br>
+                                            <input type="time">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="buttons mt-4">
+                                    <a class="prev__btn" onclick="prevForm();">Back</a>
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        class="nxt__btn  ms-auto border-0  ">Done</button>
+                                </div>
+
+                            </fieldset>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content">
+                <div class="modal-header border-bottom-0 ">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex  justify-content-center align-items-center pb-5">
+
+                    <img src="images/flat-round-check-mark-green-600nw-652023034.webp" alt="" class="img-fluid mx-auto "
+                        width="170" height="170">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
