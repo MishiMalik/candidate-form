@@ -34,13 +34,17 @@ body {
     padding: 1rem;
     padding-bottom: 0px;
 }
-
+.logo-img{
+    height: 50px;
+    width: auto;
+}
 .title__container {
     width: 100%;
     /* height: 4.5rem; */
     padding: 0.6rem 1.5rem;
     /* padding-bottom: 2rem; */
     border-bottom: 1px solid #f1f1f3;
+    
 }
 
 hr {
@@ -596,6 +600,9 @@ table.paleBlueRows tfoot td {
         padding: 20px 0;
         justify-content: flex-start;
         align-items: flex-start;
+    }
+    .nxt__btn{
+        font-size: 14px;
     }
 
     /* .left__container {
