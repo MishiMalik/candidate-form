@@ -115,7 +115,7 @@ hr {
 }
 
 .progress__bar__container ul .active {
-    background-color: var(--secondery-color);
+    background-color: var(--primary-color);
 
 }
 
@@ -153,7 +153,7 @@ hr {
     width: 1px;
     height: 20px;
     position: absolute;
-    background-color: #1CD68C;
+    background-color: var(--primary-color);
     top: 40px;
     z-index: 1;
 }
@@ -225,7 +225,7 @@ hr {
     font-size: 14px;
     border-radius: 5px;
     /* background: none; */
-    border: 1px solid var(--secondery-color);
+    border: 1px solid var(--primary-color);
     margin-bottom: 1.2rem;
     outline: none;
     color: #ffffff;
@@ -244,7 +244,7 @@ hr {
     font-size: 14px;
     border-radius: 5px;
     background: none;
-    border: 1px solid var(--secondery-color);
+    border: 1px solid rgb(167, 165, 165);
     margin-bottom: 1.2rem;
     outline: none;
     color: black;
@@ -258,8 +258,8 @@ hr {
 }
 
 .form-check-input:checked {
-    background-color: #1CD68C;
-    border-color: #1CD68C;
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 p.form-check-label {
@@ -278,7 +278,7 @@ p.form-check-label {
     font-size: 1.1rem;
     font-weight: 600;
     border-radius: 2rem;
-    background: var(--secondery-color);
+    background: var(--primary-color);
     color: #ffffff;
     text-decoration: none;
     /* border: none; */
@@ -289,7 +289,7 @@ p.form-check-label {
 
 .nxt__btn:hover {
     transform: scale(1.03);
-    background: #1cd68c;
+    background: var(--primary-color);
     cursor: pointer;
 }
 
@@ -359,7 +359,7 @@ table.paleBlueRows th {
 }
 
 table.paleBlueRows th {
-    background: #25cc89d7;
+    background: var(--primary-color);
     color: white;
 }
 
@@ -454,7 +454,7 @@ table.paleBlueRows tfoot td {
 }
 
 .selection:hover {
-    border: 1px solid var(--secondery-color);
+    border: 1px solid var(--primary-color);
     background-color: var(--primary-color);
     cursor: pointer;
 }
@@ -516,7 +516,7 @@ table.paleBlueRows tfoot td {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: var(--secondery-color);
+    background: var(--primary-color);
     cursor: pointer;
     position: relative;
 }
@@ -524,7 +524,7 @@ table.paleBlueRows tfoot td {
 .slider::-webkit-range-thumb {
     width: 50px;
     height: 50px;
-    background: var(--secondery-color);
+    background: var(--primary-color);
     cursor: pointer;
     position: relative;
 }
@@ -538,7 +538,7 @@ table.paleBlueRows tfoot td {
     border-radius: 2em;
     padding: 0.8rem 0.8rem;
     position: absolute;
-    background-color: var(--secondery-color);
+    background-color: var(--primary-color);
 }
 
 .output__value::after {
@@ -549,7 +549,7 @@ table.paleBlueRows tfoot td {
     transform: rotate(45deg);
     position: absolute;
     margin-top: 40px;
-    background-color: var(--secondery-color);
+    background-color: var(--primary-color);
 }
 
 /* @media only screen and (max-width: 1200px){
