@@ -479,7 +479,17 @@ table.paleBlueRows tfoot td {
 .accordion-item {
     border-radius: 4px !important;
 }
+.popup-text{
+    font-size: 16px;
+    font-weight: 500;
+    color: gray;
+}
+.popup-heading{
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--primary-color);
 
+}
 /*------------------------------- form-2 design --------------------*/
 
 .selection {
