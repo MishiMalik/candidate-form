@@ -20,7 +20,8 @@ body {
     justify-content: center;
     background-color: #f8f9fa;
     padding: 25px;
-    min-height: 100vh;
+    min-height: 101vh;
+    padding-bottom: 70px;
 }
 
 .text-primary {
@@ -33,6 +34,7 @@ body {
     border-radius: 7px;
     padding: 1rem;
     padding-bottom: 0px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .logo-img{
     height: 50px;
@@ -595,11 +597,30 @@ table.paleBlueRows tfoot td {
     }
   
 } */
+
+/* =======================================footer
+=================================================== */
+.logo-powerd{
+    height: 20px;
+}
+.fixed-footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    padding: 7px 5px;
+    color: gray;
+    font-weight: 500;
+    font-size: 14px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
 @media only screen and (max-width: 768px) {
     body {
         padding: 20px 0;
         justify-content: flex-start;
         align-items: flex-start;
+        padding-bottom: 70px;
     }
     .nxt__btn{
         font-size: 14px;
@@ -609,7 +630,7 @@ table.paleBlueRows tfoot td {
         width: 100%;
     } */
     .sub__title__container h2 {
-        font-size: 18px;
+        font-size: 16px;
     }
 
     .right__container {
