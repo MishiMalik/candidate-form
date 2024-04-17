@@ -9,7 +9,8 @@
 
 :root {
     --primary-color: rgb(13 110 253);
-    --secondery-color: #25CC88;
+    --secondery-color: #028429;
+    --secondery-color2:  #02a935;
     --shadow-color: #9d9fb3;
 }
 
@@ -289,8 +290,8 @@ hr {
 }
 
 .form-check-input:checked {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background-color: var(--secondery-color2);
+    border-color: var(--secondery-color2);
 }
 
 p.form-check-label {
@@ -373,7 +374,7 @@ p.form-check-label {
 }
 .selected-radio,
 .selected-check{
-    background-color: var(--primary-color) !important;
+    background-color:var(--secondery-color2) !important;
     color: white;
 }
 table.paleBlueRows {
@@ -451,7 +452,7 @@ table.paleBlueRows tfoot td {
 
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
-    background-color: red;
+    background-color: var(--secondery-color);
     ;
 
     box-shadow: none !important;
