@@ -10,7 +10,7 @@
 :root {
     --primary-color: #D5242F;
     --secondery-color: #028429;
-    --secondery-color2:  #038029;
+    --secondery-color2: #038029;
     --shadow-color: #9d9fb3;
 }
 
@@ -36,17 +36,19 @@ body {
     padding-bottom: 0px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.logo-img{
+
+.logo-img {
     height: 40px;
     width: auto;
 }
+
 .title__container {
     width: 100%;
     /* height: 4.5rem; */
     padding: 0.6rem 1.5rem;
     /* padding-bottom: 2rem; */
     border-bottom: 1px solid #f1f1f3;
-    
+
 }
 
 hr {
@@ -200,11 +202,13 @@ hr {
 .active__form {
     display: none;
 }
-.preference-name{
+
+.preference-name {
     position: relative;
     cursor: pointer;
 }
-.preference-toolpit{
+
+.preference-toolpit {
     position: absolute;
     width: 200px;
     padding: 5px;
@@ -217,9 +221,10 @@ hr {
     display: none;
 
 }
+
 .arrow-down {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 9px solid transparent;
     border-right: 9px solid transparent;
     border-top: 9px solid #000000d0;
@@ -227,11 +232,13 @@ hr {
     bottom: 24px;
     left: 10px;
     display: none;
-  }
-  .preference-name:hover .arrow-down,
-  .preference-name:hover .preference-toolpit{
+}
+
+.preference-name:hover .arrow-down,
+.preference-name:hover .preference-toolpit {
     display: block;
-  }
+}
+
 .input__container {
     width: 100%;
     display: flex;
@@ -313,7 +320,7 @@ p.form-check-label {
     /* float: right; */
     /* width: 30%; */
     padding: 8px 30px;
-    font-size:16px;
+    font-size: 16px;
     font-weight: 500;
     border-radius: 2rem;
     background: var(--primary-color);
@@ -365,11 +372,12 @@ p.form-check-label {
     font-size: 22px;
 }
 
-.active-thumb{
+.active-thumb {
     color: var(--secondery-color2);
 }
+
 .radio-button,
-.check-button{
+.check-button {
     background-color: #e4e3e3;
     border: none;
     border-radius: 0;
@@ -378,11 +386,13 @@ p.form-check-label {
     margin: 1px !important;
     font-size: 14px;
 }
+
 .selected-radio,
-.selected-check{
-    background-color:var(--secondery-color2) !important;
+.selected-check {
+    background-color: var(--secondery-color2) !important;
     color: white;
 }
+
 table.paleBlueRows {
     /* border: 1px solid #FFFFFF; */
     text-align: center;
@@ -479,17 +489,20 @@ table.paleBlueRows tfoot td {
 .accordion-item {
     border-radius: 4px !important;
 }
-.popup-text{
+
+.popup-text {
     font-size: 16px;
     font-weight: 500;
     color: gray;
 }
-.popup-heading{
+
+.popup-heading {
     font-size: 26px;
     font-weight: 600;
     color: var(--primary-color);
 
 }
+
 /*------------------------------- form-2 design --------------------*/
 
 .selection {
@@ -610,10 +623,11 @@ table.paleBlueRows tfoot td {
 
 /* =======================================footer
 =================================================== */
-.logo-powerd{
+.logo-powerd {
     height: 20px;
 }
-.fixed-footer{
+
+.fixed-footer {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -625,6 +639,7 @@ table.paleBlueRows tfoot td {
     font-size: 14px;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
+
 @media only screen and (max-width: 768px) {
     body {
         padding: 20px 0;
@@ -632,7 +647,8 @@ table.paleBlueRows tfoot td {
         align-items: flex-start;
         padding-bottom: 70px;
     }
-    .nxt__btn{
+
+    .nxt__btn {
         font-size: 14px;
     }
 
