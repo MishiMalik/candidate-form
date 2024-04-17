@@ -360,7 +360,7 @@ p.form-check-label {
 }
 
 .active-thumb{
-    color: var(--primary-color);
+    color: var(--secondery-color2);
 }
 .radio-button,
 .check-button{
@@ -392,7 +392,7 @@ table.paleBlueRows th {
 }
 
 table.paleBlueRows th {
-    background: var(--primary-color);
+    background: var(--secondery-color);
     color: white;
 }
 
@@ -549,7 +549,7 @@ table.paleBlueRows tfoot td {
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background: var(--primary-color);
+    background: var(--secondery-color2);
     cursor: pointer;
     position: relative;
 }
