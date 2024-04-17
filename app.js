@@ -120,12 +120,7 @@ const datepicker = flatpickr("#select-date", {
 
 });
 const datepicker2 = flatpickr("#select-time", {
-    // disable: [
-    //     function (date) {
-    //         // Disable weekends (Saturday and Sunday)
-    //         return date.getDay() === 0 || date.getDay() === 6;
-    //     }
-    // ],
+
     enableTime: true,
     noCalendar: true,
     dateFormat: "H:i",
