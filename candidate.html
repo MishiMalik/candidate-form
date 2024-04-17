@@ -48,7 +48,7 @@
                                         to confirm your personal
                                         information</h2>
                                 </div>
-                               
+
                                 <div class="input__container">
                                     <div class="row">
                                         <div class="col-lg-6">
@@ -778,12 +778,12 @@
                                             <div class="col-lg-6">
                                                 <label for="name">Select
                                                     Date</label><br>
-                                                <input type="text" id="select-date">
+                                                <input type="text" id="select-date" required>
                                             </div>
                                             <div class="col-lg-6">
                                                 <label for="name">Select
                                                     Time</label><br>
-                                                <input type="text" id="select-time">
+                                                <input type="text" id="select-time" required>
                                             </div>
 
                                         </div>
@@ -791,7 +791,7 @@
                                     </div>
                                     <div class="buttons mt-4">
                                         <a class="prev__btn" onclick="prevForm();">Back</a>
-                                        <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                        <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                             class="nxt__btn  ms-auto border-0  ">Done</button>
                                     </div>
 
@@ -853,7 +853,7 @@
             ],
             // enableTime: true,
             // noCalendar: true, // Hide the calendar if only time selection is needed
-            dateFormat: "Y-m-d H:i", // Optional: define date and time format
+            dateFormat: "Y-m-d", // Optional: define date and time format
             minTime: "09:00",
             maxTime: "17:00",
 
