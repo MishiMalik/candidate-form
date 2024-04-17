@@ -262,6 +262,11 @@ hr {
     border-color: #1CD68C;
 }
 
+p.form-check-label {
+    color: gray !important;
+    font-size: 14px !important;
+}
+
 .nxt__btn {
     width: auto;
     display: flex;
@@ -318,6 +323,27 @@ hr {
     font-size: 18px
 }
 
+.thumb {
+    font-size: 22px;
+}
+
+.active-thumb{
+    color: var(--primary-color);
+}
+.radio-button,
+.check-button{
+    background-color: #e4e3e3;
+    border: none;
+    border-radius: 0;
+    padding: 7px 12px;
+    margin: 0 !important;
+    margin: 1px !important;
+}
+.selected-radio,
+.selected-check{
+    background-color: var(--primary-color) !important;
+    color: white;
+}
 table.paleBlueRows {
     /* border: 1px solid #FFFFFF; */
     text-align: center;
@@ -340,6 +366,13 @@ table.paleBlueRows th {
 table.paleBlueRows tbody td {
     font-size: 14px;
 
+}
+
+table.paleBlueRows tbody td a {
+    font-size: 14px;
+    color: gray;
+    text-decoration: underline;
+    /* font-weight: 500; */
 }
 
 /* table.paleBlueRows tr:nth-child(even) {
@@ -380,9 +413,13 @@ table.paleBlueRows tfoot td {
     background-color: transparent;
 }
 
+.accordion-header h2 {
+    font-size: 18px;
+}
+
 .accordion-button:not(.collapsed) {
     color: var(--bs-accordion-active-color);
-    background-color: #25cc89d7;
+    background-color: red;
     ;
 
     box-shadow: none !important;

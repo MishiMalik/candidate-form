@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Title</title>
+    <title>candidiate Form</title>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -64,52 +64,54 @@
                             <fieldset id="form1" class="">
                                 <div class="sub__title__container mt-3">
                                     <!-- <p class="mb-0">Step 1/5</p> -->
-                                    <h2 class="mb-3">Let's start with your Personal Information</h2>
+                                    <h2 class="mb-3">Welcome Alex, we like to confirm your personal information</h2>
                                 </div>
                                 <div class="input__container">
                                     <div class="row">
                                         <div class="col-lg-6">
                                             <label for="name">First Name</label><br>
-                                            <input type="text">
+                                            <input type="text" value="Alex">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="name">Last Name</label><br>
-                                            <input type="text">
+                                            <input type="text" value="Doe">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="name">Email</label><br>
-                                            <input type="email">
+                                            <input type="email" value="alexdoe543@gmail.com">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="name">Phone</label><br>
-                                            <input type="text">
+                                            <input type="text" value="+99 333 765">
                                         </div>
                                         <div class="col-lg-6">
                                             <label for="name">Zip Code</label><br>
-                                            <input type="text">
+                                            <input type="text" value="1234">
                                         </div>
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label>Gender:</label><br>
-                                                <div class="form-check form-check-inline mt-2">
-                                                    <input class="form-check-input" type="radio" name="gender"
-                                                        id="male">
-                                                    <label class="form-check-label" for="male">Male</label>
-                                                </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="gender"
                                                         id="female">
-                                                    <label class="form-check-label" for="female">Female</label>
+                                                    <label class="form-check-label" for="female">Woman </label>
                                                 </div>
+                                                <div class="form-check form-check-inline mt-2">
+                                                    <input class="form-check-input" type="radio" name="gender" id="male"
+                                                        checked>
+                                                    <label class="form-check-label" for="male">Man</label>
+                                                </div>
+
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="gender"
                                                         id="trans">
-                                                    <label class="form-check-label" for="trans">Trans</label>
+                                                    <label class="form-check-label" for="trans">Transgender</label>
                                                 </div>
                                                 <div class="form-check form-check-inline">
                                                     <input class="form-check-input" type="radio" name="gender"
                                                         id="other">
-                                                    <label class="form-check-label" for="other">Other</label>
+                                                    <label class="form-check-label" for="other">Prefer not to
+                                                        respond</label>
                                                 </div>
                                             </div>
                                         </div>
@@ -122,30 +124,220 @@
                             <fieldset class="active__form w-100 " id="form2">
                                 <div class="accordion w-100 mt-3" id="accordionExample">
                                     <div class="accordion-item w-100 mb-3">
+                                        <h2 class="accordion-header w-100" id="headingThree">
+                                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseThree" aria-expanded="true"
+                                                aria-controls="collapseThree">
+                                                <div class="sub__title__container">
+                                                    <!-- <p class="mb-0">Step 4/5</p> -->
+                                                    <h2>Roles and Skills:</h2>
+                                                </div>
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                <div class="input__container">
+                                                    <div class="row w-100">
+                                                        <div class="col-lg-12">
+                                                            <p class="form-check-label mb-1">Role you are interested in:
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-lg-12 d-flex flex-wrap check-button-row">
+                                                            <button class="check-button">
+                                                                Personal Care Assistant (PCA/
+                                                                HCA)
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Home
+                                                                Health Aide (HHA)
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Certified Nursing Assistant
+                                                                (CNA)
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Licensed Practical Nurse
+                                                                (LPN)
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Registered Nurse (RN)
+                                                            </button>
+                                                        </div>
+                                                        <!-- <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Parkinsons">Personal Care Assistant (PCA/
+                                                                    HCA)</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label" for="Parkinsons">Home
+                                                                    Health Aide (HHA)</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Parkinsons">Certified Nursing Assistant
+                                                                    (CNA)</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Parkinsons">Licensed Practical Nurse
+                                                                    (LPN)</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Parkinsons">Registered Nurse (RN)</label>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-lg-12 mt-4">
+                                                            <p class="form-check-label mb-1">Experience with specific
+                                                                conditions:</p>
+                                                        </div>
+                                                        <div class="col-lg-12 d-flex flex-wrap check-button-row">
+                                                            <button class="check-button">
+                                                                Parkinsons
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Alzheimers
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Dementia
+                                                            </button>
+                                                        </div>
+                                                        <!-- <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Parkinsons" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Parkinsons">Parkinsons</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Alzheimers" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Alzheimers">Alzheimers</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Dementia" value="1" checked="">
+                                                                <label class="form-check-label"
+                                                                    for="Dementia">Dementia</label>
+                                                            </div>
+                                                        </div> -->
+                                                        <!-- <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Certifications" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Certifications">Certifications</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    name="Experienced" value="1">
+                                                                <label class="form-check-label"
+                                                                    for="Experienced">Experienced</label>
+                                                            </div>
+                                                        </div> -->
+                                                        <div class="col-lg-12 mt-4">
+                                                            <p class="mb-0 form-check-label mb-1">Certifications
+                                                                completed:
+                                                            </p>
+                                                            <div class="col-lg-12 d-flex flex-wrap  radio-button-row">
+                                                                <button class="radio-button">
+                                                                    Yes
+                                                                </button>
+                                                                <button class="radio-button">
+                                                                    No
+                                                                </button>
+                                                            </div>
+                                                            <!-- <div class="form-group mt-1">
+                                                                <div class="form-check form-check-inline">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="gender" id="female">
+                                                                    <label class="form-check-label" for="female">Woman
+                                                                    </label>
+                                                                </div>
+                                                                <div class="form-check form-check-inline mt-2">
+                                                                    <input class="form-check-input" type="radio"
+                                                                        name="gender" id="male" checked>
+                                                                    <label class="form-check-label"
+                                                                        for="male">Man</label>
+                                                                </div>
+
+                                                            </div> -->
+                                                        </div>
+
+                                                    </div>
+
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item w-100 mb-3">
                                         <h2 class="accordion-header w-100" id="headingOne">
-                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseOne" aria-expanded="true"
-                                                aria-controls="collapseOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                aria-expanded="false" aria-controls="collapseOne">
                                                 <div class="sub__title__container">
                                                     <h2>Preferences </h2>
                                                 </div>
                                             </button>
                                         </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                        <div id="collapseOne" class="accordion-collapse collapse "
                                             aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="accordion-body">
                                                 <div class="input__container">
                                                     <div class="row">
-                                                        <div class="col-lg-8">
+                                                        <div class="col-lg-6">
                                                             <div class="form-check ps-0">
                                                                 <label class="form-check-label" for="distance">Travel
-                                                                    Distance:
+                                                                    Distance within:
                                                                 </label>
-                                                                <div class="d-flex  flex-wrap ">
+                                                                <div
+                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
+                                                                    <button class="radio-button">
+                                                                        2 mile
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        5 mile
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        10 mile
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        20 mile
+                                                                    </button>
+                                                                </div>
+                                                                <!-- <div class="d-flex  flex-wrap ">
                                                                     <div class="form-check me-3">
                                                                         <input class="form-check-input" type="radio"
                                                                             id="1-m" name="t-distance" />
-                                                                        <label class="form-check-label" for="1-m"> 1
+                                                                        <label class="form-check-label" for="1-m"> 2
                                                                             mile </label>
                                                                     </div>
                                                                     <div class="form-check me-3">
@@ -166,7 +358,7 @@
                                                                         <label class="form-check-label" for="20-m"> 20
                                                                             mile </label>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                                 <!-- <select class="form-select" name="distance"
                                                                     aria-label="Distance preference">
                                                                     <option value="0" selected="">No preference</option>
@@ -179,9 +371,10 @@
                                                             </div>
 
                                                         </div>
-                                                        <div class="col-lg-4 mb-1">
+                                                        <div class="col-lg-6 mb-1 mt-md-0 mt-4">
                                                             <div class="form-check ps-0">
-                                                                <label class="form-check-label" for="smoking">Smoking:
+                                                                <label class="form-check-label" for="smoking">Comfort
+                                                                    with Smoking:
                                                                 </label>
                                                                 <!-- <select class="form-select" name="smoking"
                                                                     aria-label="Smoking preference">
@@ -189,26 +382,50 @@
                                                                     <option value="-1">No</option>
                                                                     <option value="1">Yes</option>
                                                                 </select> -->
-                                                                <div class="d-flex ">
+                                                                <div
+                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
+                                                                    <button class="radio-button">
+                                                                        Conformatble
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        Prefer
+                                                                        not to
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        Uncomfortable
+                                                                    </button>
+
+                                                                </div>
+                                                                <!-- <div class="d-flex ">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="radio"
                                                                             name="smoking" id="yes" />
-                                                                        <label class="form-check-label" for="yes"> Yes
+                                                                        <label class="form-check-label" for="yes">
+                                                                            Conformatble
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check ms-3">
                                                                         <input class="form-check-input" type="radio"
                                                                             name="smoking" id="no" />
-                                                                        <label class="form-check-label" for="no"> No
+                                                                        <label class="form-check-label" for="no"> Prefer
+                                                                            not to
                                                                         </label>
                                                                     </div>
-                                                                </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="smoking" id="no" />
+                                                                        <label class="form-check-label" for="no">
+                                                                            Uncomfortable
+                                                                        </label>
+                                                                    </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 mb-1">
+                                                        <div class="col-lg-12 mb-1 mt-4">
 
                                                             <div class="form-check ps-0">
-                                                                <label class="form-check-label" for="driving">Driving:
+                                                                <label class="form-check-label" for="driving">Driving
+                                                                    duties:
                                                                 </label>
                                                                 <!-- <select class="form-select" name="driving"
                                                                     aria-label="Driving preference">
@@ -216,113 +433,98 @@
                                                                     <option value="-1">No</option>
                                                                     <option value="1">Yes</option>
                                                                 </select> -->
-                                                                <div class="d-flex  ">
+                                                                <div
+                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
+                                                                    <button class="radio-button">
+                                                                        Willing & able
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        Reluctant but possible
+                                                                    </button>
+                                                                    <button class="radio-button">
+                                                                        Unable to drive
+                                                                    </button>
+                                                                </div>
+                                                                <!-- <div class="d-flex  ">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="radio"
                                                                             name="driving" id="yes1" />
-                                                                        <label class="form-check-label" for="yes1"> Yes
+                                                                        <label class="form-check-label" for="yes1">
+                                                                            Willing & able
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check ms-3">
                                                                         <input class="form-check-input" type="radio"
                                                                             name="driving" id="no1" />
-                                                                        <label class="form-check-label" for="no1"> No
+                                                                        <label class="form-check-label" for="no1">
+                                                                            Reluctant but possible
                                                                         </label>
                                                                     </div>
-                                                                </div>
+                                                                    <div class="form-check ms-3">
+                                                                        <input class="form-check-input" type="radio"
+                                                                            name="driving" id="no1" />
+                                                                        <label class="form-check-label" for="no1">
+                                                                            unable to drive
+                                                                        </label>
+                                                                    </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
 
-                                                        <div class="col-lg-4 mb-1">
+                                                        <div class="col-lg-6 mb-1 mt-4">
                                                             <div class="form-check ps-0">
-                                                                <label class="form-check-label"
-                                                                    for="geriatric">Geriatric: </label>
+                                                                <label class="form-check-label mb-1"
+                                                                    for="geriatric">Preferred patient age groups (select
+                                                                    all that apply): </label>
                                                                 <!-- <select class="form-select" name="geriatric"
                                                                     aria-label="Geriatric preference">
                                                                     <option value="0" selected="">No preference</option>
                                                                     <option value="-1">No</option>
                                                                     <option value="1">Yes</option>
                                                                 </select> -->
-                                                                <div class="d-flex  ">
+                                                                <div
+                                                                    class="col-lg-12 d-flex flex-wrap  check-button-row">
+                                                                    <button class="check-button">
+                                                                        Geriartic
+                                                                    </button>
+                                                                    <button class="check-button">
+                                                                        Pediatric
+                                                                    </button>
+                                                                    <button class="check-button">
+                                                                        Adult
+                                                                    </button>
+                                                                </div>
+                                                                <!-- <div class="d-flex  ">
                                                                     <div class="form-check">
-                                                                        <input class="form-check-input" type="radio"
+                                                                        <input class="form-check-input" type="checkbox"
                                                                             name="geriatric" id="yes2" />
-                                                                        <label class="form-check-label" for="yes2"> Yes
+                                                                        <label class="form-check-label" for="yes2">
+                                                                            Geriartic
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check ms-3">
-                                                                        <input class="form-check-input" type="radio"
+                                                                        <input class="form-check-input" type="checkbox"
                                                                             name="geriatric" id="no2" />
-                                                                        <label class="form-check-label" for="no2"> No
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-4 mb-1">
-
-                                                            <div class="form-check ps-0">
-                                                                <label class="form-check-label"
-                                                                    for="pediatric">Pediatric: </label>
-                                                                <!-- <select class="form-select" name="pediatric"
-                                                                    aria-label="Pediatric preference">
-                                                                    <option value="0" selected="">No preference</option>
-                                                                    <option value="-1">No</option>
-                                                                    <option value="1">Yes</option>
-                                                                </select> -->
-                                                                <div class="d-flex  ">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="pediatric" id="yes3" />
-                                                                        <label class="form-check-label" for="yes3"> Yes
+                                                                        <label class="form-check-label" for="no2">
+                                                                            Pediatric
                                                                         </label>
                                                                     </div>
                                                                     <div class="form-check ms-3">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="pediatric" id="no3" />
-                                                                        <label class="form-check-label" for="no3"> No
+                                                                        <input class="form-check-input" type="checkbox"
+                                                                            name="geriatric" id="no2" />
+                                                                        <label class="form-check-label" for="no2"> Adult
                                                                         </label>
                                                                     </div>
-                                                                </div>
+                                                                </div> -->
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-4 mb-1">
-
-                                                            <div class="form-check ps-0">
-                                                                <label class="form-check-label" for="adult">Adult:
-                                                                </label>
-                                                                <!-- <select class="form-select" name="adult" aria-label="Adult preference">
-                                                                    <option value="0" selected="">No preference</option>
-                                                                    <option value="-1">No</option>
-                                                                    <option value="1">Yes</option>
-                                                                </select> -->
-                                                                <div class="d-flex  ">
-                                                                    <div class="form-check">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="Adult" id="yes4" />
-                                                                        <label class="form-check-label" for="yes4"> Yes
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="form-check ms-3">
-                                                                        <input class="form-check-input" type="radio"
-                                                                            name="Adult" id="no4" />
-                                                                        <label class="form-check-label" for="no4"> No
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <!--                                                      
                                                         <div class="col-lg-4 mb-1">
                                                             <div class="form-check ps-0">
                                                                 <label class="form-check-label" for="mental">Mental
                                                                     Disability:
                                                                 </label>
-                                                                <!-- <select class="form-select" name="mental"
-                                                                    aria-label="Mental disability preference">
-                                                                    <option value="0" selected="">No preference</option>
-                                                                    <option value="-1">No</option>
-                                                                    <option value="1">Yes</option>
-                                                                </select> -->
+                                                               
                                                                 <div class="d-flex  ">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="radio"
@@ -344,12 +546,7 @@
                                                                 <label class="form-check-label" for="physical">Physical
                                                                     Disability:
                                                                 </label>
-                                                                <!-- <select class="form-select" name="physical"
-                                                                    aria-label="Physical disability preference">
-                                                                    <option value="0" selected="">No preference</option>
-                                                                    <option value="-1">No</option>
-                                                                    <option value="1">Yes</option>
-                                                                </select> -->
+                                                               
                                                                 <div class="d-flex  ">
                                                                     <div class="form-check">
                                                                         <input class="form-check-input" type="radio"
@@ -365,7 +562,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
 
                                                 </div>
@@ -389,7 +586,57 @@
 
                                                 <div class="input__container">
                                                     <div class="row w-100">
-                                                        <div class="col-lg-3">
+                                                        <div class="col-lg-12">
+                                                            <p class="form-check-label mb-1">Languages (check all that
+                                                                apply):</p>
+
+                                                            <div class="col-lg-12 d-flex flex-wrap  check-button-row">
+                                                                <button class="check-button">
+                                                                    English
+                                                                </button>
+                                                                <button class="check-button">
+                                                                    Spanish
+                                                                </button>
+                                                                <button class="check-button">
+                                                                    Italian
+                                                                </button>
+                                                                <button class="check-button">
+                                                                    Japanese
+                                                                </button>
+                                                                <button class="check-button">
+                                                                    Cantonese
+                                                                </button>
+                                                                <button class="check-button">
+                                                                    Mandarin
+                                                                </button>
+                                                                <button class="check-button">
+
+                                                                    Hindi
+
+                                                                </button>
+                                                                <button class="check-button">
+
+                                                                    Arabic
+
+
+                                                                </button>
+                                                                <button class="check-button">
+
+                                                                    Russian
+
+                                                                </button>
+                                                                <button class="check-button">
+
+                                                                    French
+                                                                </button>
+                                                                <button class="check-button">
+
+                                                                    Portuguese
+                                                                </button>
+
+                                                            </div>
+                                                        </div>
+                                                        <!-- <div class="col-lg-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox"
                                                                     name="English" value="1" checked="">
@@ -476,77 +723,14 @@
                                                                 <label class="form-check-label"
                                                                     for="Portuguese">Portuguese</label>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
                                                     </div>
 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="accordion-item w-100 mb-3">
-                                        <h2 class="accordion-header w-100" id="headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
-                                                aria-expanded="false" aria-controls="collapseThree">
-                                                <div class="sub__title__container">
-                                                    <!-- <p class="mb-0">Step 4/5</p> -->
-                                                    <h2>Skills:</h2>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <div class="input__container">
-                                                    <div class="row w-100">
-                                                        <div class="col-lg-3">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    name="Parkinsons" value="1" checked="">
-                                                                <label class="form-check-label"
-                                                                    for="Parkinsons">Parkinsons</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    name="Alzheimers" value="1" checked="">
-                                                                <label class="form-check-label"
-                                                                    for="Alzheimers">Alzheimers</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    name="Dementia" value="1" checked="">
-                                                                <label class="form-check-label"
-                                                                    for="Dementia">Dementia</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    name="Certifications" value="1">
-                                                                <label class="form-check-label"
-                                                                    for="Certifications">Certifications</label>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    name="Experienced" value="1">
-                                                                <label class="form-check-label"
-                                                                    for="Experienced">Experienced</label>
-                                                            </div>
-                                                        </div>
 
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
                                     <div class="accordion-item w-100 mb-3">
                                         <h2 class="accordion-header w-100" id="headingfour">
                                             <button class="accordion-button collapsed" type="button"
@@ -562,7 +746,34 @@
                                             <div class="accordion-body">
                                                 <div class="input__container">
                                                     <div class="row w-100">
-                                                        <div class="col-lg-3">
+                                                        <div class="col-lg-12">
+                                                            <p class="form-check-label mb-1">
+                                                                One more criteria before we run the “smart match”.
+                                                                Availability (check all that apply):
+                                                            </p>
+                                                        </div>
+                                                        <div class="d-flex  flex-wrap check-button-row">
+                                                            <button class="check-button">
+                                                                Live
+                                                                In
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Weekend
+                                                                Warrior
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Overnight
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Part
+                                                                Time
+                                                            </button>
+                                                            <button class="check-button">
+                                                                Flexible
+                                                                Schedules
+                                                            </button>
+                                                        </div>
+                                                        <!-- <div class="col-lg-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox"
                                                                     name="Live In" value="1" checked="">
@@ -570,14 +781,7 @@
                                                                     In</label>
                                                             </div>
                                                         </div>
-                                                        <div class="col-lg-3">
-                                                            <div class="form-check">
-                                                                <input class="form-check-input" type="checkbox"
-                                                                    name="Companion" value="1" checked="">
-                                                                <label class="form-check-label"
-                                                                    for="Companion">Companion</label>
-                                                            </div>
-                                                        </div>
+
                                                         <div class="col-lg-3">
                                                             <div class="form-check">
                                                                 <input class="form-check-input" type="checkbox"
@@ -611,7 +815,7 @@
                                                                     for="Flexible Schedules">Flexible
                                                                     Schedules</label>
                                                             </div>
-                                                        </div>
+                                                        </div> -->
 
                                                     </div>
 
@@ -637,7 +841,7 @@
                                     <table class="paleBlueRows w-100">
                                         <tbody>
                                             <tr>
-                                                <th>View</th>
+                                                <!-- <th>View</th> -->
                                                 <th>Role</th>
                                                 <th>Location</th>
                                                 <th>Distance</th>
@@ -646,246 +850,115 @@
                                                 <th>Action</th>
                                             </tr>
                                             <tr>
-                                                <td><a
+                                                <!-- <td><a
                                                         href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
+                                                </td> -->
+                                                <td class=" "><a href="">Home Care Aide with Dementia Experience</a>
                                                 </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
+                                                <td>Wayne, PA
+                                                </td>
                                                 <td>6</td>
                                                 <td>USD $17.00/Hr.</td>
                                                 <td>USD $21.00/Hr.</td>
                                                 <td>
                                                     <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action1"
-                                                                id="yes" />
-                                                            <label class="form-check-label" for="yes"> Yes </label>
+                                                        <div class="thumb-up me-3 thumb">
+                                                            <ion-icon name="thumbs-up-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action1"
-                                                                id="no" />
-                                                            <label class="form-check-label" for="no"> No </label>
+                                                        <div class="thumb-down thumb">
+                                                            <ion-icon name="thumbs-down-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=6178E7D6-8A9B-6315-3607-588AB5CDCA66">View</a>
+                                                <td class=" "><a href="">Home Care Aide with Dementia Experience</a>
                                                 </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
+                                                <td>Wayne, PA
+                                                </td>
                                                 <td>2</td>
                                                 <td>USD $17.00/Hr.</td>
                                                 <td>USD $21.00/Hr.</td>
                                                 <td>
                                                     <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action2"
-                                                                id="yes2" />
-                                                            <label class="form-check-label" for="yes2"> Yes </label>
+                                                        <div class="thumb-up me-3 thumb">
+                                                            <ion-icon name="thumbs-up-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action2"
-                                                                id="no2" />
-                                                            <label class="form-check-label" for="no2"> No </label>
+                                                        <div class="thumb-down thumb">
+                                                            <ion-icon name="thumbs-down-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=085A7467-736D-04C2-6899-11B03FAB1442">View</a>
+                                                <td class=" "><a href="">Home Care Aide with Dementia Experience</a>
                                                 </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
+                                                <td>Wayne, PA
+                                                </td>
                                                 <td>9</td>
                                                 <td>USD $17.00/Hr.</td>
                                                 <td>USD $21.00/Hr.</td>
                                                 <td>
                                                     <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action3"
-                                                                id="yes3" />
-                                                            <label class="form-check-label" for="yes3"> Yes </label>
+                                                        <div class="thumb-up me-3 thumb">
+                                                            <ion-icon name="thumbs-up-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action3"
-                                                                id="no3" />
-                                                            <label class="form-check-label" for="no3"> No </label>
+                                                        <div class="thumb-down thumb">
+                                                            <ion-icon name="thumbs-down-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=07B5614E-A19E-3179-527A-CED8477DAF6A">View</a>
+                                                <td class=" "><a href="">Home Care Aide with Dementia Experience</a>
                                                 </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
+                                                <td>Wayne, PA
+                                                </td>
                                                 <td>2</td>
                                                 <td>USD $17.00/Hr.</td>
                                                 <td>USD $21.00/Hr.</td>
                                                 <td>
                                                     <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action4"
-                                                                id="yes4" />
-                                                            <label class="form-check-label" for="yes4"> Yes </label>
+                                                        <div class="thumb-up me-3 thumb">
+                                                            <ion-icon name="thumbs-up-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action4"
-                                                                id="no4" />
-                                                            <label class="form-check-label" for="no4"> No </label>
+                                                        <div class="thumb-down thumb">
+                                                            <ion-icon name="thumbs-down-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
 
                                             <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=BCD92CA8-AC40-ABD1-9186-B719FD3776A1">View</a>
+                                                <td class=" "><a href="">Home Care Aide with Dementia Experience</a>
                                                 </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
+                                                <td>Wayne, PA
+                                                </td>
                                                 <td>9</td>
                                                 <td>USD $17.00/Hr.</td>
                                                 <td>USD $21.00/Hr.</td>
                                                 <td>
                                                     <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action10"
-                                                                id="yes10" />
-                                                            <label class="form-check-label" for="yes10"> Yes </label>
+                                                        <div class="thumb-up me-3 thumb">
+                                                            <ion-icon name="thumbs-up-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action10"
-                                                                id="no10" />
-                                                            <label class="form-check-label" for="no10"> No </label>
+                                                        <div class="thumb-down thumb">
+                                                            <ion-icon name="thumbs-down-outline"
+                                                                class="thumb-line"></ion-icon>
                                                         </div>
                                                     </div>
                                                 </td>
                                             </tr>
-                                            <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=601ECB02-2DD1-0601-239D-2ED39A5FB477">View</a>
-                                                </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
-                                                <td>14</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action11"
-                                                                id="yes11" />
-                                                            <label class="form-check-label" for="yes11"> Yes </label>
-                                                        </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action11"
-                                                                id="no11" />
-                                                            <label class="form-check-label" for="no11"> No </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=720002BB-6CF7-FE3B-093A-4E4625F992D1">View</a>
-                                                </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
-                                                <td>2</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action12"
-                                                                id="yes12" />
-                                                            <label class="form-check-label" for="yes12"> Yes </label>
-                                                        </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action12"
-                                                                id="no12" />
-                                                            <label class="form-check-label" for="no12"> No </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=ACD94352-7ACD-9107-D4E8-C0DB8FBE81B4">View</a>
-                                                </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
-                                                <td>18</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action13"
-                                                                id="yes13" />
-                                                            <label class="form-check-label" for="yes13"> Yes </label>
-                                                        </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action13"
-                                                                id="no13" />
-                                                            <label class="form-check-label" for="no13"> No </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=C1BBB2EA-201A-355F-81CB-341C82EC3ABA">View</a>
-                                                </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
-                                                <td>7</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action14"
-                                                                id="yes14" />
-                                                            <label class="form-check-label" for="yes14"> Yes </label>
-                                                        </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action14"
-                                                                id="no14" />
-                                                            <label class="form-check-label" for="no14"> No </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=711E894E-3516-E57B-717D-288B33A9F414">View</a>
-                                                </td>
-                                                <td>Caregiver with Personal Care Experience</td>
-                                                <td>US-WI-West Bend</td>
-                                                <td>7</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="radio" name="action15"
-                                                                id="yes15" />
-                                                            <label class="form-check-label" for="yes15"> Yes </label>
-                                                        </div>
-                                                        <div class="form-check ms-3">
-                                                            <input class="form-check-input" type="radio" name="action15"
-                                                                id="no15" />
-                                                            <label class="form-check-label" for="no15"> No </label>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
+
 
 
 
@@ -909,6 +982,7 @@
                                                 max-width: 100%;
                                                 max-height: 100%;
                                                 background: none;
+                                            }
                                         </style>
                                     </div>
                                 </div>
@@ -985,6 +1059,61 @@
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
         crossorigin="anonymous"></script>
     <script src="app.js"></script>
+
+    <script>
+        // jQuery document ready shorthand
+        //    $(function() {
+        //         $('.thumb-line').click(function() {
+        //             var iconName = $(this).attr('name');
+        //             // Remove "-outline" from the clicked element
+        //             var newName = iconName.replace('-outline', '');
+        //             // Set the new name to the clicked element
+        //             $(this).attr('name', newName);
+        //             // Add "-outline" back to the other thumb-line elements within the same container
+        //             $(this).closest('.d-flex').find('.thumb-line').not(this).attr('name', function(_, oldName) {
+        //                 return oldName.replace(/(?<!-outline)$/, '-outline');
+        //             });
+        //         });
+        //     });
+
+        // jQuery document ready shorthand
+        $(function () {
+            $('.thumb-line').click(function () {
+                // Remove active class from all thumb-line elements within the same container
+                $(this).closest('.d-flex').find('.thumb-line').removeClass('active-thumb');
+                // Add active-thumb class to the clicked thumb-line element
+                $(this).addClass('active-thumb');
+                var iconName = $(this).attr('name');
+                // Remove "-outline" from the clicked element
+                var newName = iconName.replace('-outline', '');
+                // Set the new name to the clicked element
+                $(this).attr('name', newName);
+                // Add "-outline" back to the other thumb-line elements within the same container
+                $(this).closest('.d-flex').find('.thumb-line').not(this).attr('name', function (_, oldName) {
+                    return oldName.replace(/(?<!-outline)$/, '-outline');
+                });
+            });
+        });
+
+    </script>
+    <!-- check selecetd/radio -->
+    <script>
+        $(function () {
+            $('.check-button').click(function () {
+                $(this).toggleClass('selected-check');
+            });
+        });
+
+        $(function () {
+            $('.radio-button').click(function () {
+                // Remove selected-radio class from all buttons within the same container
+                $(this).closest('.radio-button-row').find('.radio-button').removeClass('selected-radio');
+                // Add selected-radio class to the clicked button
+                $(this).addClass('selected-radio');
+            });
+        });
+    </script>
+
 </body>
 
 </html>
