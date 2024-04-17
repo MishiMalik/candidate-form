@@ -3,15 +3,8 @@ const form1 = document.querySelector('#form1');
 const form2 = document.querySelector('#form2');
 const form3 = document.querySelector('#form3');
 const form4 = document.querySelector('#form4');
-// const form5 = document.querySelector('#form5');
-// const form6 = document.querySelector('#form6');
-// const form7 = document.querySelector('#form7');
 
-const icon1 = document.querySelector('#icon1');
-const icon2 = document.querySelector('#icon2');
-const icon3 = document.querySelector('#icon3');
-const icon4 = document.querySelector('#icon4');
-const icon5 = document.querySelector('#icon5');
+
 const topText = document.querySelector('.title__container');
 const rightContainer = document.querySelector('.right__container');
 const leftContainer = document.querySelector('.left__container');
@@ -20,7 +13,7 @@ var viewId = 1;
 function nextForm(){
     console.log("hellonext");
     viewId=viewId+1;
-    progressBar();
+    // progressBar();
     displayForms();
     
     console.log(viewId);
@@ -34,68 +27,11 @@ function prevForm(){
     progressBar1();
     displayForms();
 }
-function progressBar1(){
-    if(viewId===1){
-        icon2.classList.add('active');
-        icon2.classList.remove('active');
-        icon3.classList.remove('active');
-        icon4.classList.remove('active');
-        icon5.classList.remove('active');
-    }
-    if(viewId===2){
-        icon2.classList.add('active');
-        icon3.classList.remove('active');
-        icon4.classList.remove('active');
-        icon5.classList.remove('active');
-    }
-    if(viewId===3){
-        icon3.classList.add('active');
-        icon4.classList.remove('active');
-        icon5.classList.remove('active');
-    }
-    if(viewId===4){
-        icon4.classList.add('active');
-        icon5.classList.remove('active');
-    }
-    if(viewId===5){
-        icon5.classList.add('active');
-        nxtBtn.innerHTML = "Submit"
-    }
-    if(viewId===6){
-        leftContainer.style.display="none";
-      
-        
-    }
-}
 
-function progressBar(){
-    if(viewId===2){
-        icon2.classList.add('active');
-    }
-    if(viewId===3){
-        icon3.classList.add('active');
-    }
-    if(viewId===4){
-        icon4.classList.add('active');
-    }
-    if(viewId===5){
-        icon5.classList.add('active');
-        nxtBtn.innerHTML = "Submit"
-    }
-    if(viewId>5){
-        icon2.classList.remove('active');
-        icon3.classList.remove('active');
-        icon4.classList.remove('active');
-        icon5.classList.remove('active');
-        
-    }
-}
 
 function displayForms(){
     
-    // if(viewId>5){
-    //     viewId=1;
-    // }
+  
 
     if(viewId ===1){
         form1.style.display = 'block';
@@ -132,15 +68,37 @@ function displayForms(){
 }
 
 
-// for slider
+    // jQuery document ready shorthand
+    $(function () {
+        $('.thumb-line').click(function () {
+            // Remove active class from all thumb-line elements within the same container
+            $(this).closest('.d-flex').find('.thumb-line').removeClass('active-thumb');
+            // Add active-thumb class to the clicked thumb-line element
+            $(this).addClass('active-thumb');
+            var iconName = $(this).attr('name');
+            // Remove "-outline" from the clicked element
+            var newName = iconName.replace('-outline', '');
+            // Set the new name to the clicked element
+            $(this).attr('name', newName);
+            // Add "-outline" back to the other thumb-line elements within the same container
+            $(this).closest('.d-flex').find('.thumb-line').not(this).attr('name', function (_, oldName) {
+                return oldName.replace(/(?<!-outline)$/, '-outline');
+            });
+        });
+    });
+    // <!-- check selecetd/radio -->
+    $(function () {
+        $('.check-button').click(function () {
+            $(this).toggleClass('selected-check');
+        });
+    });
 
-var slider = document.querySelector(".slider");
-var output = document.querySelector(".output__value");
-output.innerHTML = slider.value ;
-
-slider.oninput = function() {
-    output.innerHTML = this.value ;
-    
-    
-}
+    $(function () {
+        $('.radio-button').click(function () {
+            // Remove selected-radio class from all buttons within the same container
+            $(this).closest('.radio-button-row').find('.radio-button').removeClass('selected-radio');
+            // Add selected-radio class to the clicked button
+            $(this).addClass('selected-radio');
+        });
+    });
 
