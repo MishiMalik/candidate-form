@@ -40,402 +40,456 @@
                         </div>
                     </div>
                     <div class="body__container">
-                    <form action="">
-                        <div class="right__container ">
-                            <!-- personal info -->
-                            <fieldset id="form1" class>
-                                <div class="sub__title__container mt-3">
-                                    <h2 class="mb-3">Welcome Alex, we like
-                                        to confirm your personal
-                                        information</h2>
-                                </div>
+                        <form action="">
+                            <div class="right__container ">
+                                <!-- personal info -->
+                                <fieldset id="form1" class>
+                                    <div class="sub__title__container mt-3">
+                                        <h2 class="mb-3">Welcome Alex, we like
+                                            to confirm your personal
+                                            information</h2>
+                                    </div>
 
-                                <div class="input__container">
-                                    <div class="row">
-                                        <div class="col-lg-6">
-                                            <label for="name">First
-                                                Name</label><br>
-                                            <input type="text" value="Alex">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <label for="name">Last
-                                                Name</label><br>
-                                            <input type="text" value="Doe">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <label for="name">Email</label><br>
-                                            <input type="email" value="alexdoe543@gmail.com">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <label for="name">Phone</label><br>
-                                            <input type="text" value="+99 333 765">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <label for="name">Zip
-                                                Code</label><br>
-                                            <input type="text" value="1234">
-                                        </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group">
-                                                <label>Gender:</label><br>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="gender"
-                                                        id="female">
-                                                    <label class="form-check-label" for="female">Woman
-                                                    </label>
-                                                </div>
-                                                <div class="form-check form-check-inline mt-2">
-                                                    <input class="form-check-input" type="radio" name="gender" id="male"
-                                                        checked>
-                                                    <label class="form-check-label" for="male">Man</label>
-                                                </div>
+                                    <div class="input__container">
+                                        <div class="row">
+                                            <div class="col-lg-6">
+                                                <label for="name">First
+                                                    Name</label><br>
+                                                <input type="text" value="Alex">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="name">Last
+                                                    Name</label><br>
+                                                <input type="text" value="Doe">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="name">Email</label><br>
+                                                <input type="email" value="alexdoe543@gmail.com">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="name">Phone</label><br>
+                                                <input type="text" value="+99 333 765">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <label for="name">Zip
+                                                    Code</label><br>
+                                                <input type="text" value="1234">
+                                            </div>
+                                            <div class="col-lg-6">
+                                                <div class="form-group">
+                                                    <label>Gender:</label><br>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gender"
+                                                            id="female">
+                                                        <label class="form-check-label" for="female">Woman
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline mt-2">
+                                                        <input class="form-check-input" type="radio" name="gender"
+                                                            id="male" checked>
+                                                        <label class="form-check-label" for="male">Man</label>
+                                                    </div>
 
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="gender"
-                                                        id="trans">
-                                                    <label class="form-check-label" for="trans">Transgender</label>
-                                                </div>
-                                                <div class="form-check form-check-inline">
-                                                    <input class="form-check-input" type="radio" name="gender"
-                                                        id="other">
-                                                    <label class="form-check-label" for="other">Prefer
-                                                        not to
-                                                        respond</label>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gender"
+                                                            id="trans">
+                                                        <label class="form-check-label" for="trans">Transgender</label>
+                                                    </div>
+                                                    <div class="form-check form-check-inline">
+                                                        <input class="form-check-input" type="radio" name="gender"
+                                                            id="other">
+                                                        <label class="form-check-label" for="other">Prefer
+                                                            not to
+                                                            respond</label>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
+
+                                        <a class="nxt__btn ms-auto " onclick="nextForm();"> Next</a>
                                     </div>
-
-                                    <a class="nxt__btn ms-auto " onclick="nextForm();"> Next</a>
-                                </div>
-                            </fieldset>
-                            <!-- Four steps/ tab 2 -->
-                            <fieldset class="active__form w-100 " id="form2">
-                                <div class="accordion w-100 mt-3" id="accordionExample">
-                                    <div class="accordion-item w-100 mb-3">
-                                        <h2 class="accordion-header w-100" id="headingThree">
-                                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
-                                                data-bs-target="#collapseThree" aria-expanded="true"
-                                                aria-controls="collapseThree">
-                                                <div class="sub__title__container">
-                                                    <h2>Roles and
-                                                        Skills:</h2>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseThree" class="accordion-collapse collapse show"
-                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <div class="input__container">
-                                                    <div class="row w-100">
-                                                        <div class="col-lg-12">
-                                                            <p class="form-check-label mb-1">Role
-                                                                you are
-                                                                interested
-                                                                in:
-                                                            </p>
-                                                        </div>
-                                                        <div class="col-lg-12 d-flex align-items-center flex-wrap ">
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span> Personal
-                                                                        Care
-                                                                        Assistant
-                                                                        (PCA/
-                                                                        HCA)</span>
-                                                                </label>
+                                </fieldset>
+                                <!-- Four steps/ tab 2 -->
+                                <fieldset class="active__form w-100 " id="form2">
+                                    <div class="accordion w-100 mt-3" id="accordionExample">
+                                        <div class="accordion-item w-100 mb-3">
+                                            <h2 class="accordion-header w-100" id="headingThree">
+                                                <button class="accordion-button " type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                    aria-expanded="true" aria-controls="collapseThree">
+                                                    <div class="sub__title__container">
+                                                        <h2>Roles and
+                                                            Skills:</h2>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseThree" class="accordion-collapse collapse show"
+                                                aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="input__container">
+                                                        <div class="row w-100">
+                                                            <div class="col-lg-12">
+                                                                <p class="form-check-label mb-1">Role
+                                                                    you are
+                                                                    interested
+                                                                    in:
+                                                                </p>
                                                             </div>
-
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span> Home
-                                                                        Health Aide
-                                                                        (HHA)</span>
-                                                                </label>
-                                                            </div>
-
-                                                            <div class="check-button ">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span> Certified
-                                                                        Nursing
-                                                                        Assistant
-                                                                        (CNA)</span>
-                                                                </label>
-                                                            </div>
-
-                                                            <div class="check-button ">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span> Licensed
-                                                                        Practical
-                                                                        Nurse
-                                                                        (LPN)</span>
-                                                                </label>
-                                                            </div>
-
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span> Registered
-                                                                        Nurse (RN)</span>
-                                                                </label>
-                                                            </div>
-
-
-                                                        </div>
-
-
-                                                        <div class="col-lg-12 mt-4">
-                                                            <p class="form-check-label mb-1">Experience
-                                                                with
-                                                                specific
-                                                                conditions:</p>
-                                                        </div>
-                                                        <div class="col-lg-12 d-flex flex-wrap check-button-row">
-
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Parkinsons</span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Alzheimers</span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Dementia</span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 mt-4">
-                                                            <p class="mb-0 form-check-label mb-1">Certifications
-                                                                completed:
-                                                            </p>
-                                                            <div class="col-lg-12 d-flex flex-wrap  radio-button-row">
-                                                                <div class="check-button ">
+                                                            <div class="col-lg-12 d-flex align-items-center flex-wrap ">
+                                                                <div class="check-button">
                                                                     <label>
-                                                                        <input type="radio" value=""
-                                                                            name="certification-completed"><span>Yes</span>
+                                                                        <input type="checkbox" value=""><span> Personal
+                                                                            Care
+                                                                            Assistant
+                                                                            (PCA/
+                                                                            HCA)</span>
                                                                     </label>
                                                                 </div>
-                                                                <div class="check-button ">
+
+                                                                <div class="check-button">
                                                                     <label>
-                                                                        <input type="radio" value=""
-                                                                            name="certification-completed"><span>NO</span>
+                                                                        <input type="checkbox" value=""><span> Home
+                                                                            Health Aide
+                                                                            (HHA)</span>
                                                                     </label>
                                                                 </div>
+
+                                                                <div class="check-button ">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span> Certified
+                                                                            Nursing
+                                                                            Assistant
+                                                                            (CNA)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-button ">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span> Licensed
+                                                                            Practical
+                                                                            Nurse
+                                                                            (LPN)</span>
+                                                                    </label>
+                                                                </div>
+
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Registered
+                                                                            Nurse (RN)</span>
+                                                                    </label>
+                                                                </div>
+
+
+                                                            </div>
+
+
+                                                            <div class="col-lg-12 mt-4">
+                                                                <p class="form-check-label mb-1">Experience
+                                                                    with
+                                                                    specific
+                                                                    conditions:</p>
+                                                            </div>
+                                                            <div class="col-lg-12 d-flex flex-wrap check-button-row">
+
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Parkinsons</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Alzheimers</span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Dementia</span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-12 mt-4">
+                                                                <p class="mb-0 form-check-label mb-1">Certifications
+                                                                    completed:
+                                                                </p>
+                                                                <div
+                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
+                                                                    <div class="check-button ">
+                                                                        <label>
+                                                                            <input type="radio" value=""
+                                                                                name="certification-completed"><span>Yes</span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button ">
+                                                                        <label>
+                                                                            <input type="radio" value=""
+                                                                                name="certification-completed"><span>NO</span>
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+
                                                             </div>
 
                                                         </div>
 
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item w-100 mb-3">
-                                        <h2 class="accordion-header w-100" id="headingOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseOne"
-                                                aria-expanded="false" aria-controls="collapseOne">
-                                                <div class="sub__title__container">
-                                                    <h2>Preferences </h2>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseOne" class="accordion-collapse collapse "
-                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <div class="input__container">
-                                                    <div class="row">
-                                                        <div class="col-lg-6">
-                                                            <div class="form-check ps-0">
-                                                                <div class="preference-name">
-                                                                    <label class="form-check-label "
-                                                                        for="distance">Travel
-                                                                        Distance
-                                                                        within:
-                                                                    </label>
-                                                                    <div class="preference-toolpit">
-                                                                        How
-                                                                        far
-                                                                        are
-                                                                        you
-                                                                        willing
-                                                                        to
-                                                                        travel
-                                                                        (in
-                                                                        miles)
-                                                                        to
-                                                                        a
-                                                                        patient's
-                                                                        home?
+                                        <div class="accordion-item w-100 mb-3">
+                                            <h2 class="accordion-header w-100" id="headingOne">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                                    aria-expanded="false" aria-controls="collapseOne">
+                                                    <div class="sub__title__container">
+                                                        <h2>Preferences </h2>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseOne" class="accordion-collapse collapse "
+                                                aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="input__container">
+                                                        <div class="row">
+                                                            <div class="col-lg-6">
+                                                                <div class="form-check ps-0">
+                                                                    <div class="preference-name">
+                                                                        <label class="form-check-label "
+                                                                            for="distance">Travel
+                                                                            Distance
+                                                                            within:
+                                                                        </label>
+                                                                        <div class="preference-toolpit">
+                                                                            How
+                                                                            far
+                                                                            are
+                                                                            you
+                                                                            willing
+                                                                            to
+                                                                            travel
+                                                                            (in
+                                                                            miles)
+                                                                            to
+                                                                            a
+                                                                            patient's
+                                                                            home?
+                                                                        </div>
+                                                                        <div class="arrow-down"></div>
                                                                     </div>
-                                                                    <div class="arrow-down"></div>
-                                                                </div>
-                                                                <div
-                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
+                                                                    <div
+                                                                        class="col-lg-12 d-flex flex-wrap  radio-button-row">
 
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="travel-distance"><span> 2
-                                                                                mile</span>
-                                                                        </label>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="travel-distance"><span> 2
+                                                                                    mile</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="travel-distance"><span> 5
+                                                                                    mile</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="travel-distance"><span> 10
+                                                                                    mile</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="travel-distance"><span> 20
+                                                                                    mile</span>
+                                                                            </label>
+                                                                        </div>
                                                                     </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="travel-distance"><span> 5
-                                                                                mile</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="travel-distance"><span> 10
-                                                                                mile</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="travel-distance"><span> 20
-                                                                                mile</span>
-                                                                        </label>
-                                                                    </div>
+
                                                                 </div>
 
                                                             </div>
+                                                            <div class="col-lg-6 mb-1 mt-md-0 mt-4">
+                                                                <div class="form-check ps-0">
 
-                                                        </div>
-                                                        <div class="col-lg-6 mb-1 mt-md-0 mt-4">
-                                                            <div class="form-check ps-0">
+                                                                    <div class="preference-name">
+                                                                        <label class="form-check-label "
+                                                                            for="distance">Comfort
+                                                                            with
+                                                                            Smoking:
+                                                                        </label>
+                                                                        <div class="preference-toolpit">
+                                                                            Are
+                                                                            you
+                                                                            comfortable
+                                                                            working
+                                                                            in a
+                                                                            smoking
+                                                                            environment?
+                                                                        </div>
+                                                                        <div class="arrow-down"></div>
+                                                                    </div>
 
-                                                                <div class="preference-name">
-                                                                    <label class="form-check-label "
-                                                                        for="distance">Comfort
-                                                                        with
-                                                                        Smoking:
-                                                                    </label>
-                                                                    <div class="preference-toolpit">
-                                                                        Are
-                                                                        you
+                                                                    <div
+                                                                        class="col-lg-12 d-flex flex-wrap  radio-button-row">
+
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="smoking-comfort"><span>
+                                                                                    Comfortable</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="smoking-comfort"><span>
+                                                                                    Uncomfortable</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="smoking-comfort"><span> No
+                                                                                    Preference</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12 mb-1 mt-4">
+
+                                                                <div class="form-check ps-0">
+
+                                                                    <div class="preference-name">
+                                                                        <label class="form-check-label "
+                                                                            for="distance">Driving
+                                                                            Duties:
+                                                                        </label>
+                                                                        <div class="preference-toolpit">
+                                                                            Are
+                                                                            you
+                                                                            able
+                                                                            to
+                                                                            drive
+                                                                            the
+                                                                            patient
+                                                                            as
+                                                                            part
+                                                                            of
+                                                                            your
+                                                                            duties?
+                                                                        </div>
+                                                                        <div class="arrow-down"></div>
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="col-lg-12 d-flex flex-wrap  radio-button-row">
+
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="driving-duties"><span> Willing
+                                                                                    &
+                                                                                    able</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="driving-duties"><span>
+                                                                                    Reluctant
+                                                                                    but
+                                                                                    possible</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button ">
+                                                                            <label>
+                                                                                <input type="radio" value=""
+                                                                                    name="driving-duties"><span> Unable
+                                                                                    to
+                                                                                    drive</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="col-lg-12 mb-1 mt-4">
+                                                                <div class="form-check ps-0">
+
+                                                                    <div class="preference-name">
+                                                                        <label class="form-check-label "
+                                                                            for="distance">Preferred
+                                                                            patient
+                                                                            age
+                                                                            groups
+                                                                            (Select
+                                                                            All
+                                                                            that
+                                                                            Apply):
+                                                                        </label>
+
+                                                                    </div>
+
+                                                                    <div
+                                                                        class="col-lg-12 d-flex flex-wrap  check-button-row">
+                                                                        <div class="check-button">
+                                                                            <label>
+                                                                                <input type="checkbox" value=""><span>
+                                                                                    Geriartic</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button">
+                                                                            <label>
+                                                                                <input type="checkbox" value=""><span>
+                                                                                    Pediatric</span>
+                                                                            </label>
+                                                                        </div>
+                                                                        <div class="check-button">
+                                                                            <label>
+                                                                                <input type="checkbox" value=""><span>
+                                                                                    Adult</span>
+                                                                            </label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-lg-12">
+
+                                                                <div class="preference-name mt-4">
+                                                                    <label class="form-check-label " for="distance">Are
+                                                                        You
                                                                         comfortable
                                                                         working
-                                                                        in a
-                                                                        smoking
-                                                                        environment?
-                                                                    </div>
-                                                                    <div class="arrow-down"></div>
-                                                                </div>
-
-                                                                <div
-                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
-
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="smoking-comfort"><span>
-                                                                                Comfortable</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="smoking-comfort"><span>
-                                                                                Uncomfortable</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="smoking-comfort"><span> No
-                                                                                Preference</span>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-lg-12 mb-1 mt-4">
-
-                                                            <div class="form-check ps-0">
-
-                                                                <div class="preference-name">
-                                                                    <label class="form-check-label "
-                                                                        for="distance">Driving
-                                                                        Duties:
+                                                                        with
+                                                                        patients
+                                                                        with
+                                                                        disablilites/disorders?:
                                                                     </label>
                                                                     <div class="preference-toolpit">
-                                                                        Are
-                                                                        you
-                                                                        able
-                                                                        to
-                                                                        drive
-                                                                        the
-                                                                        patient
-                                                                        as
-                                                                        part
-                                                                        of
-                                                                        your
-                                                                        duties?
+                                                                        Do you
+                                                                        have
+                                                                        experience
+                                                                        with
+                                                                        patients
+                                                                        who have
+                                                                        mental
+                                                                        disabilities
+                                                                        or
+                                                                        disorders
                                                                     </div>
                                                                     <div class="arrow-down"></div>
-                                                                </div>
-
-                                                                <div
-                                                                    class="col-lg-12 d-flex flex-wrap  radio-button-row">
-
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="driving-duties"><span> Willing
-                                                                                &
-                                                                                able</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="driving-duties"><span> Reluctant
-                                                                                but
-                                                                                possible</span>
-                                                                        </label>
-                                                                    </div>
-                                                                    <div class="check-button ">
-                                                                        <label>
-                                                                            <input type="radio" value=""
-                                                                                name="driving-duties"><span> Unable
-                                                                                to
-                                                                                drive</span>
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="col-lg-12 mb-1 mt-4">
-                                                            <div class="form-check ps-0">
-
-                                                                <div class="preference-name">
-                                                                    <label class="form-check-label "
-                                                                        for="distance">Preferred
-                                                                        patient
-                                                                        age
-                                                                        groups
-                                                                        (Select
-                                                                        All
-                                                                        that
-                                                                        Apply):
-                                                                    </label>
-
                                                                 </div>
 
                                                                 <div
@@ -443,508 +497,460 @@
                                                                     <div class="check-button">
                                                                         <label>
                                                                             <input type="checkbox" value=""><span>
-                                                                                Geriartic</span>
+                                                                                Mental</span>
                                                                         </label>
                                                                     </div>
                                                                     <div class="check-button">
                                                                         <label>
                                                                             <input type="checkbox" value=""><span>
-                                                                                Pediatric</span>
+                                                                                Physical</span>
+                                                                        </label>
+                                                                    </div>
+
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="accordion-item w-100 mb-3">
+                                            <h2 class="accordion-header w-100" id="headingTwo">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                    aria-expanded="false" aria-controls="collapseTwo">
+                                                    <div class="sub__title__container">
+                                                        <h2>Languages</h2>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+
+                                                    <div class="input__container">
+                                                        <div class="row w-100">
+                                                            <div class="col-lg-12">
+                                                                <p class="form-check-label mb-2">Languages
+                                                                    (Check All
+                                                                    that
+                                                                    Apply):</p>
+
+                                                                <div
+                                                                    class="col-lg-12 d-flex flex-wrap  check-button-row">
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+                                                                                English
+                                                                            </span>
                                                                         </label>
                                                                     </div>
                                                                     <div class="check-button">
                                                                         <label>
                                                                             <input type="checkbox" value=""><span>
-                                                                                Adult</span>
+                                                                                Spanish
+                                                                            </span>
                                                                         </label>
                                                                     </div>
-                                                                </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+                                                                                Italian
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+                                                                                Japanese
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+                                                                                Cantonese
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+                                                                                Mandarin
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
 
+                                                                                Hindi
+
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+
+                                                                                Arabic
+
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+
+                                                                                Russian
+
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+
+                                                                                French
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+                                                                    <div class="check-button">
+                                                                        <label>
+                                                                            <input type="checkbox" value=""><span>
+
+                                                                                Portuguese
+                                                                            </span>
+                                                                        </label>
+                                                                    </div>
+
+                                                                </div>
                                                             </div>
-                                                        </div>
-                                                        <div class="col-lg-12">
 
-                                                            <div class="preference-name mt-4">
-                                                                <label class="form-check-label " for="distance">Are
-                                                                    You
-                                                                    comfortable
-                                                                    working
-                                                                    with
-                                                                    patients
-                                                                    with
-                                                                    disablilites/disorders?:
-                                                                </label>
-                                                                <div class="preference-toolpit">
-                                                                    Do you
-                                                                    have
-                                                                    experience
-                                                                    with
-                                                                    patients
-                                                                    who have
-                                                                    mental
-                                                                    disabilities
-                                                                    or
-                                                                    disorders
-                                                                </div>
-                                                                <div class="arrow-down"></div>
-                                                            </div>
-
-                                                            <div class="col-lg-12 d-flex flex-wrap  check-button-row">
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Mental</span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Physical</span>
-                                                                    </label>
-                                                                </div>
-
-                                                            </div>
                                                         </div>
 
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="accordion-item w-100 mb-3">
-                                        <h2 class="accordion-header w-100" id="headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
-                                                aria-expanded="false" aria-controls="collapseTwo">
-                                                <div class="sub__title__container">
-                                                    <h2>Languages</h2>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
 
-                                                <div class="input__container">
-                                                    <div class="row w-100">
-                                                        <div class="col-lg-12">
-                                                            <p class="form-check-label mb-2">Languages
-                                                                (Check All
-                                                                that
-                                                                Apply):</p>
-
-                                                            <div class="col-lg-12 d-flex flex-wrap  check-button-row">
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            English
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Spanish
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Italian
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Japanese
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Cantonese
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Mandarin
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            Hindi
-
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            Arabic
-
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            Russian
-
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            French
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            Portuguese
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-
+                                        <div class="accordion-item w-100 mb-3">
+                                            <h2 class="accordion-header w-100" id="headingfour">
+                                                <button class="accordion-button collapsed" type="button"
+                                                    data-bs-toggle="collapse" data-bs-target="#collapsefour"
+                                                    aria-expanded="false" aria-controls="collapsefour">
+                                                    <div class="sub__title__container">
+                                                        <h2>Availability</h2>
+                                                    </div>
+                                                </button>
+                                            </h2>
+                                            <div id="collapsefour" class="accordion-collapse collapse"
+                                                aria-labelledby="headingfour" data-bs-parent="#accordionExample">
+                                                <div class="accordion-body">
+                                                    <div class="input__container">
+                                                        <div class="row w-100">
+                                                            <div class="col-lg-12">
+                                                                <p class="form-check-label mb-2">
+                                                                    One more
+                                                                    criteria
+                                                                    before we
+                                                                    run the
+                                                                    “Smart
+                                                                    Match”.
+                                                                    Availability
+                                                                    (Check All
+                                                                    that Apply):
+                                                                </p>
                                                             </div>
+                                                            <div class="d-flex  flex-wrap check-button-row">
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Live
+                                                                            In
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Weekend
+                                                                            Warrior
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Overnight
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Part
+                                                                            Time
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                                <div class="check-button">
+                                                                    <label>
+                                                                        <input type="checkbox" value=""><span>
+                                                                            Flexible
+                                                                            Schedules
+                                                                        </span>
+                                                                    </label>
+                                                                </div>
+                                                            </div>
+
                                                         </div>
 
                                                     </div>
-
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-
-                                    <div class="accordion-item w-100 mb-3">
-                                        <h2 class="accordion-header w-100" id="headingfour">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#collapsefour"
-                                                aria-expanded="false" aria-controls="collapsefour">
-                                                <div class="sub__title__container">
-                                                    <h2>Availability</h2>
-                                                </div>
-                                            </button>
-                                        </h2>
-                                        <div id="collapsefour" class="accordion-collapse collapse"
-                                            aria-labelledby="headingfour" data-bs-parent="#accordionExample">
-                                            <div class="accordion-body">
-                                                <div class="input__container">
-                                                    <div class="row w-100">
-                                                        <div class="col-lg-12">
-                                                            <p class="form-check-label mb-2">
-                                                                One more
-                                                                criteria
-                                                                before we
-                                                                run the
-                                                                “Smart
-                                                                Match”.
-                                                                Availability
-                                                                (Check All
-                                                                that Apply):
-                                                            </p>
-                                                        </div>
-                                                        <div class="d-flex  flex-wrap check-button-row">
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Live
-                                                                        In
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Weekend
-                                                                        Warrior
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Overnight
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Part
-                                                                        Time
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                            <div class="check-button">
-                                                                <label>
-                                                                    <input type="checkbox" value=""><span>
-                                                                        Flexible
-                                                                        Schedules
-                                                                    </span>
-                                                                </label>
-                                                            </div>
-                                                        </div>
-
-                                                    </div>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="buttons mt-4">
-                                    <a class="prev__btn" onclick="prevForm();">Back</a>
-                                    <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Submit</a>
-                                </div>
-                            </fieldset>
-                            <!-- Best Matches -->
-                            <fieldset class="active__form w-100 pt-0 " id="form3">
-                                <div class="sub__title__container pt-0  ">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center flex-md-row flex-column ">
-                                        <h2 class="pt-0 text-primary order-md-1 order-2 text-md-start text-center ">
-                                            Thanks
-                                            For Submitting Information.</h2>
-
-                                        <div class="order-md-2 order-1 mb-md-2 mb-4 d-flex justify-content-center">
-                                            <img src="images/logo.png" alt="" class="img-fluid logo-img">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <h4 class="mb-0 pb-0 match-roles mt-2">Found
-                                        39 matching roles</h4>
-                                </div>
-
-                                <div class="table-responsive w-100 mt-3">
-                                    <table class="paleBlueRows w-100">
-                                        <tbody>
-                                            <tr>
-                                                <!-- <th>View</th> -->
-                                                <th>Role</th>
-                                                <th>Location</th>
-                                                <th>Distance</th>
-                                                <th>Min</th>
-                                                <th>Max</th>
-                                                <th>Action</th>
-                                            </tr>
-                                            <tr>
-                                                <!-- <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
-                                                </td> -->
-                                                <td class=" "><a href>Home
-                                                        Care Aide with
-                                                        Dementia
-                                                        Experience</a>
-                                                </td>
-                                                <td>Wayne, PA
-                                                </td>
-                                                <td>6</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="thumb-up me-3 thumb">
-                                                            <ion-icon name="thumbs-up-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                        <div class="thumb-down thumb">
-                                                            <ion-icon name="thumbs-down-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class=" "><a href>Home
-                                                        Care Aide with
-                                                        Dementia
-                                                        Experience</a>
-                                                </td>
-                                                <td>Wayne, PA
-                                                </td>
-                                                <td>2</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="thumb-up me-3 thumb">
-                                                            <ion-icon name="thumbs-up-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                        <div class="thumb-down thumb">
-                                                            <ion-icon name="thumbs-down-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class=" "><a href>Home
-                                                        Care Aide with
-                                                        Dementia
-                                                        Experience</a>
-                                                </td>
-                                                <td>Wayne, PA
-                                                </td>
-                                                <td>9</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="thumb-up me-3 thumb">
-                                                            <ion-icon name="thumbs-up-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                        <div class="thumb-down thumb">
-                                                            <ion-icon name="thumbs-down-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class=" "><a href>Home
-                                                        Care Aide with
-                                                        Dementia
-                                                        Experience</a>
-                                                </td>
-                                                <td>Wayne, PA
-                                                </td>
-                                                <td>2</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="thumb-up me-3 thumb">
-                                                            <ion-icon name="thumbs-up-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                        <div class="thumb-down thumb">
-                                                            <ion-icon name="thumbs-down-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td class=" "><a href>Home
-                                                        Care Aide with
-                                                        Dementia
-                                                        Experience</a>
-                                                </td>
-                                                <td>Wayne, PA
-                                                </td>
-                                                <td>9</td>
-                                                <td>USD $17.00/Hr.</td>
-                                                <td>USD $21.00/Hr.</td>
-                                                <td>
-                                                    <div class="d-flex justify-content-center ">
-                                                        <div class="thumb-up me-3 thumb">
-                                                            <ion-icon name="thumbs-up-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                        <div class="thumb-down thumb">
-                                                            <ion-icon name="thumbs-down-outline"
-                                                                class="thumb-line"></ion-icon>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                        </tbody>
-                                    </table>
-                                </div>
-
-                                <div class="map-div mt-4">
-                                    <div
-                                        style="text-decoration:none; overflow:hidden;max-width:100%;width:100%;height:300px;">
-                                        <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;"><iframe
-                                                style="height:100%;width:100%;border:0;" frameborder="0"
-                                                src="https://www.google.com/maps/embed/v1/place?q=US&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                                        </div><a class="google-map-code-enabler"
-                                            href="https://www.bootstrapskins.com/themes" id="enable-maps-data">premium
-                                            bootstrap themes</a>
-                                        <style>
-                                            #g-mapdisplay .text-marker {}
-
-                                            .map-generator {
-                                                max-width: 100%;
-                                                max-height: 100%;
-                                                background: none;
-                                            }
-                                        </style>
-                                    </div>
-                                </div>
-
-                                <div class="buttons mt-4">
-                                    <a class="prev__btn" onclick="prevForm();">Back</a>
-                                    <a class="nxt__btn" onclick="nextForm();">Schedule
-                                        an Interview</a>
-                                </div>
-
-                            </fieldset>
-                            <!-- Schedule a meeting -->
-                            <fieldset class="active__form w-100 pt-0 " id="form4">
-
-                                <div class="sub__title__container pt-0  ">
-                                    <div
-                                        class="d-flex justify-content-between align-items-center flex-md-row flex-column ">
-                                        <div class="order-md-1 order-2 text-md-start text-center ">
-                                            <h2 class="pt-0 text-primary ">Schedule
-                                                an Interview</h2>
-                                            <p class="mb-0 pb-0 match-roles  ">You
-                                                can Select a date and time for
-                                                an
-                                                interview</p>
-                                        </div>
-
-                                        <div class="order-md-2 order-1 mb-md-2 mb-4 d-flex justify-content-center">
-                                            <img src="images/logo.png" alt="" class="img-fluid logo-img">
-                                        </div>
-                                    </div>
-                                    <hr>
-                                    <div class="input__container mt-3">
-                                        <div class="row">
-                                            <div class="col-lg-6">
-                                                <label for="name">Select
-                                                    Date</label><br>
-                                                <input type="text" id="select-date" required>
-                                            </div>
-                                            <div class="col-lg-6">
-                                                <label for="name">Select
-                                                    Time</label><br>
-                                                <input type="text" id="select-time" required>
-                                            </div>
-
-                                        </div>
-
                                     </div>
                                     <div class="buttons mt-4">
                                         <a class="prev__btn" onclick="prevForm();">Back</a>
-                                        <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
-                                            class="nxt__btn  ms-auto border-0  ">Done</button>
+                                        <a class="nxt__btn" id="submitBtn" onclick="nextForm();">Submit</a>
+                                    </div>
+                                </fieldset>
+                                <!-- Best Matches -->
+                                <fieldset class="active__form w-100 pt-0 " id="form3">
+                                    <div class="sub__title__container pt-0  ">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center flex-md-row flex-column ">
+                                            <h2 class="pt-0 text-primary order-md-1 order-2 text-md-start text-center ">
+                                                Thanks
+                                                For Submitting Information.</h2>
+
+                                            <div class="order-md-2 order-1 mb-md-2 mb-4 d-flex justify-content-center">
+                                                <img src="images/logo.png" alt="" class="img-fluid logo-img">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <h4 class="mb-0 pb-0 match-roles mt-2">Found
+                                            39 matching roles</h4>
                                     </div>
 
-                            </fieldset>
-                        </div>
-                    </form>
+                                    <div class="table-responsive w-100 mt-3">
+                                        <table class="paleBlueRows w-100">
+                                            <tbody>
+                                                <tr>
+                                                    <!-- <th>View</th> -->
+                                                    <th>Role</th>
+                                                    <th>Location</th>
+                                                    <th>Distance</th>
+                                                    <th>Min</th>
+                                                    <th>Max</th>
+                                                    <th>Action</th>
+                                                </tr>
+                                                <tr>
+                                                    <!-- <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
+                                                </td> -->
+                                                    <td class=" "><a href>Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</a>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center ">
+                                                            <div class="thumb-up me-3 thumb">
+                                                                <ion-icon name="thumbs-up-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                            <div class="thumb-down thumb">
+                                                                <ion-icon name="thumbs-down-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><a href>Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</a>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center ">
+                                                            <div class="thumb-up me-3 thumb">
+                                                                <ion-icon name="thumbs-up-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                            <div class="thumb-down thumb">
+                                                                <ion-icon name="thumbs-down-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><a href>Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</a>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>9</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center ">
+                                                            <div class="thumb-up me-3 thumb">
+                                                                <ion-icon name="thumbs-up-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                            <div class="thumb-down thumb">
+                                                                <ion-icon name="thumbs-down-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><a href>Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</a>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center ">
+                                                            <div class="thumb-up me-3 thumb">
+                                                                <ion-icon name="thumbs-up-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                            <div class="thumb-down thumb">
+                                                                <ion-icon name="thumbs-down-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td class=" "><a href>Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</a>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>9</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div class="d-flex justify-content-center ">
+                                                            <div class="thumb-up me-3 thumb">
+                                                                <ion-icon name="thumbs-up-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                            <div class="thumb-down thumb">
+                                                                <ion-icon name="thumbs-down-outline"
+                                                                    class="thumb-line"></ion-icon>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div class="map-div mt-4">
+                                        <div
+                                            style="text-decoration:none; overflow:hidden;max-width:100%;width:100%;height:300px;">
+                                            <div id="g-mapdisplay" style="height:100%; width:100%;max-width:100%;">
+                                                <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                                                    src="https://www.google.com/maps/embed/v1/place?q=US&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+                                            </div><a class="google-map-code-enabler"
+                                                href="https://www.bootstrapskins.com/themes"
+                                                id="enable-maps-data">premium
+                                                bootstrap themes</a>
+                                            <style>
+                                                #g-mapdisplay .text-marker {}
+
+                                                .map-generator {
+                                                    max-width: 100%;
+                                                    max-height: 100%;
+                                                    background: none;
+                                                }
+                                            </style>
+                                        </div>
+                                    </div>
+
+                                    <div class="buttons mt-4">
+                                        <a class="prev__btn" onclick="prevForm();">Back</a>
+                                        <a class="nxt__btn" onclick="nextForm();">Schedule
+                                            an Interview</a>
+                                    </div>
+
+                                </fieldset>
+                                <!-- Schedule a meeting -->
+                                <fieldset class="active__form w-100 pt-0 " id="form4">
+
+                                    <div class="sub__title__container pt-0  ">
+                                        <div
+                                            class="d-flex justify-content-between align-items-center flex-md-row flex-column ">
+                                            <div class="order-md-1 order-2 text-md-start text-center ">
+                                                <h2 class="pt-0 text-primary ">Schedule
+                                                    an Interview</h2>
+                                                <p class="mb-0 pb-0 match-roles  ">You
+                                                    can Select a date and time for
+                                                    an
+                                                    interview</p>
+                                            </div>
+
+                                            <div class="order-md-2 order-1 mb-md-2 mb-4 d-flex justify-content-center">
+                                                <img src="images/logo.png" alt="" class="img-fluid logo-img">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <div class="input__container mt-3">
+                                            <div class="row">
+                                                <div class="col-lg-6">
+                                                    <label for="name">Select
+                                                        Date</label><br>
+                                                    <input type="text" id="select-date" required>
+                                                </div>
+                                                <div class="col-lg-6">
+                                                    <label for="name">Select
+                                                        Time</label><br>
+                                                    <input type="text" id="select-time" required>
+                                                </div>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="buttons mt-4">
+                                            <a class="prev__btn" onclick="prevForm();">Back</a>
+                                            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                class="nxt__btn  ms-auto border-0  ">Done</button>
+                                        </div>
+
+                                </fieldset>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
