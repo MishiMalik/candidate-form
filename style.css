@@ -249,7 +249,7 @@ hr {
 .input__container label {
     color: gray;
     font-size: 14px;
-    margin-bottom: 0.4rem;
+    /* margin-bottom: 0.4rem; */
 }
 
 .prev__btn {
@@ -376,6 +376,7 @@ p.form-check-label {
     color: var(--secondery-color2);
 }
 
+/* 
 .radio-button,
 .check-button {
     background-color: #e4e3e3;
@@ -394,11 +395,59 @@ p.form-check-label {
 }
 
 table.paleBlueRows {
-    /* border: 1px solid #FFFFFF; */
+    border: 1px solid #FFFFFF;
     text-align: center;
     border-collapse: collapse;
+} */
+
+.check-button {
+
+    background-color: #e4e3e3;
+    border: none;
+    border-radius: 0;
+    margin: 0 !important;
+    margin: 1px !important;
+    font-size: 14px;
+    overflow: hidden;
+    color: black;
+
 }
 
+.check-button label {
+    float: left;
+
+
+}
+
+.check-button label span {
+    text-align: center;
+    padding: 3px 0;
+    display: block;
+    padding: 7px 12px;
+    font-size: 14px;
+    color: black;
+}
+
+.check-button label input {
+    position: absolute;
+    display: none;
+    color: black;
+
+}
+
+/* selects all of the text within the input element and changes the color of the text */
+.check-button label input+span {
+    color: black;
+    cursor: pointer;
+}
+
+
+/* This will declare how a selected input will look giving generic properties */
+.check-button input:checked+span {
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    background-color: var(--secondery-color2);
+}
 
 table.paleBlueRows td,
 table.paleBlueRows th {

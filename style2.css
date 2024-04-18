@@ -1,0 +1,60 @@
+body {
+    font-family: sans-serif;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #104068;
+}
+
+:root {
+    --primary-color: #D5242F;
+    --secondery-color: #028429;
+    --secondery-color2: #038029;
+    --shadow-color: #9d9fb3;
+}
+
+
+
+.check-button {
+
+    background-color: #e4e3e3;
+    border: none;
+    border-radius: 0;
+    margin: 0 !important;
+    margin: 1px !important;
+    font-size: 14px;
+    overflow: hidden;
+    
+}
+
+.check-button label {
+    float: left;
+  
+   
+}
+
+.check-button label span {
+    text-align: center;
+    padding: 3px 0;
+    display: block;
+    padding: 7px 12px;
+}
+
+.check-button label input {
+    position: absolute;
+    display: none;
+    color: #fff !important;
+
+}
+
+/* selects all of the text within the input element and changes the color of the text */
+.check-button label input+span {
+    color: #fff;
+}
+
+
+/* This will declare how a selected input will look giving generic properties */
+.check-button input:checked+span {
+    color: #ffffff;
+    text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
+    background-color: var(--secondery-color2);
+}
