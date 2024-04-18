@@ -86,22 +86,6 @@ $(function () {
         });
     });
 });
-// <!-- check selecetd/radio -->
-// $(function () {
-//     $('.check-button').click(function () {
-//         $(this).toggleClass('selected-check');
-//     });
-// });
-
-// $(function () {
-//     $('.radio-button').click(function () {
-//         // Remove selected-radio class from all buttons within the same container
-//         $(this).closest('.radio-button-row').find('.radio-button').removeClass('selected-radio');
-//         // Add selected-radio class to the clicked button
-//         $(this).addClass('selected-radio');
-//     });
-// });
-
 
 
 // date and time picker
