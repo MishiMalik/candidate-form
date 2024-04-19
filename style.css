@@ -452,8 +452,9 @@ table.paleBlueRows {
 table.paleBlueRows td,
 table.paleBlueRows th {
     border: 1px solid rgb(228, 225, 225);
-    padding: 7px 3px;
+    padding: 7px 5px;
     color: gray;
+    text-align: center;
 }
 
 table.paleBlueRows th {
@@ -506,6 +507,13 @@ table.paleBlueRows tfoot {
 table.paleBlueRows tfoot td {
     font-size: 14px;
 }
+
+
+
+
+
+
+
 
 .interview-btn {
     background-color: transparent;
@@ -689,6 +697,19 @@ table.paleBlueRows tfoot td {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
+.table-responsive{
+max-height: 520px;
+overflow-y: auto;
+}
+.table-responsive::-webkit-scrollbar {
+    width: 7px;
+  }
+   
+
+  .table-responsive::-webkit-scrollbar-thumb {
+    background-color: var(--secondery-color2);
+    border-radius: 4px;
+  }
 @media only screen and (max-width: 768px) {
     body {
         padding: 20px 0;
