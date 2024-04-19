@@ -69,23 +69,23 @@ function displayForms() {
 
 
 // jQuery document ready shorthand
-$(function () {
-    $('.thumb-line').click(function () {
-        // Remove active class from all thumb-line elements within the same container
-        $(this).closest('.d-flex').find('.thumb-line').removeClass('active-thumb');
-        // Add active-thumb class to the clicked thumb-line element
-        $(this).addClass('active-thumb');
-        var iconName = $(this).attr('name');
-        // Remove "-outline" from the clicked element
-        var newName = iconName.replace('-outline', '');
-        // Set the new name to the clicked element
-        $(this).attr('name', newName);
-        // Add "-outline" back to the other thumb-line elements within the same container
-        $(this).closest('.d-flex').find('.thumb-line').not(this).attr('name', function (_, oldName) {
-            return oldName.replace(/(?<!-outline)$/, '-outline');
-        });
-    });
-});
+// $(function () {
+//     $('.thumb-line').click(function () {
+//         // Remove active class from all thumb-line elements within the same container
+//         $(this).closest('.d-flex').find('.thumb-line').removeClass('active-thumb');
+//         // Add active-thumb class to the clicked thumb-line element
+//         // $(this).addClass('active-thumb');
+//         var iconName = $(this).attr('name');
+//         // Remove "-outline" from the clicked element
+//         var newName = iconName.replace('-outline', '');
+//         // Set the new name to the clicked element
+//         $(this).attr('name', newName);
+//         // Add "-outline" back to the other thumb-line elements within the same container
+//         $(this).closest('.d-flex').find('.thumb-line').not(this).attr('name', function (_, oldName) {
+//             return oldName.replace(/(?<!-outline)$/, '-outline');
+//         });
+//     });
+// });
 
 
 // date and time picker

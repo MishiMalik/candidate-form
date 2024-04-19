@@ -412,7 +412,10 @@ table.paleBlueRows {
     color: black;
 
 }
-
+.thumb-btn{
+    background-color: transparent !important;
+    font-size: 26px !important;
+}
 .check-button label {
     float: left;
 
@@ -426,6 +429,11 @@ table.paleBlueRows {
     padding: 7px 12px;
     font-size: 14px;
     color: black;
+}
+.thumb-btn label span{
+    font-size: 22px !important;
+    color: gray !important;
+    padding: 0px  3px!important;
 }
 
 .check-button label input {
@@ -448,7 +456,14 @@ table.paleBlueRows {
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
     background-color: var(--secondery-color2);
 }
-
+.thumb-up input:checked+span{
+    color: var(--secondery-color2) !important;
+    background-color: transparent !important;
+}
+.thumb-down input:checked+span{
+    color: var(--primary-color) !important;
+    background-color: transparent !important;
+}
 table.paleBlueRows td,
 table.paleBlueRows th {
     border: 1px solid rgb(228, 225, 225);
@@ -467,11 +482,31 @@ table.paleBlueRows tbody td {
 
 }
 
+table.paleBlueRows tbody tr:hover {
+    cursor: pointer;
+    background-color: #f5f4f4;
+}
+
 table.paleBlueRows tbody td a {
     font-size: 14px;
     color: gray;
     text-decoration: underline;
+    text-decoration: underline;
     /* font-weight: 500; */
+}
+
+table.paleBlueRows tbody td button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    font-size: 14px;
+    color: gray;
+    text-decoration: underline;
+    text-decoration: underline;
+}
+
+table.paleBlueRows tbody td button:hover {
+    color: var(--secondery-color2);
 }
 
 /* table.paleBlueRows tr:nth-child(even) {
@@ -603,6 +638,26 @@ table.paleBlueRows tfoot td {
     color: var(--shadow-color);
 }
 
+.modal-dialog-lg {
+    max-width: 700px;
+}
+
+.modal-body h5 {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar {
+    width: 7px;
+}
+
+
+.modal-dialog-scrollable .modal-body::-webkit-scrollbar-thumb {
+    background-color: var(--primary-color);
+    border-radius: 4px;
+}
 
 /*-------------------------------------- form-4 design----------------------------------------- */
 .slider {
@@ -697,19 +752,21 @@ table.paleBlueRows tfoot td {
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 
-.table-responsive{
-max-height: 520px;
-overflow-y: auto;
+.table-responsive {
+    max-height: 520px;
+    overflow-y: auto;
 }
+
 .table-responsive::-webkit-scrollbar {
     width: 7px;
-  }
-   
+}
 
-  .table-responsive::-webkit-scrollbar-thumb {
+
+.table-responsive::-webkit-scrollbar-thumb {
     background-color: var(--secondery-color2);
     border-radius: 4px;
-  }
+}
+
 @media only screen and (max-width: 768px) {
     body {
         padding: 20px 0;

@@ -107,6 +107,7 @@
                                         </div>
 
                                         <a class="nxt__btn ms-auto " onclick="nextForm();"> Next</a>
+                                       
                                     </div>
                                 </fieldset>
                                 <!-- Four steps/ tab 2 -->
@@ -553,13 +554,7 @@
                                                                         </span>
                                                                     </label>
                                                                 </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Italian
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+
                                                                 <div class="check-button">
                                                                     <label>
                                                                         <input type="checkbox" value=""><span>
@@ -567,20 +562,8 @@
                                                                         </span>
                                                                     </label>
                                                                 </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Cantonese
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-                                                                            Mandarin
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
+
+
                                                                 <div class="check-button">
                                                                     <label>
                                                                         <input type="checkbox" value=""><span>
@@ -594,33 +577,18 @@
                                                                     <label>
                                                                         <input type="checkbox" value=""><span>
 
-                                                                            Arabic
+                                                                            Romanian
 
                                                                         </span>
                                                                     </label>
                                                                 </div>
+
+
                                                                 <div class="check-button">
                                                                     <label>
                                                                         <input type="checkbox" value=""><span>
 
-                                                                            Russian
-
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            French
-                                                                        </span>
-                                                                    </label>
-                                                                </div>
-                                                                <div class="check-button">
-                                                                    <label>
-                                                                        <input type="checkbox" value=""><span>
-
-                                                                            Portuguese
+                                                                            Chinese
                                                                         </span>
                                                                     </label>
                                                                 </div>
@@ -736,7 +704,7 @@
                                     </div>
 
                                     <div class="table-responsive w-100 mt-3">
-                                        
+
                                         <table class="paleBlueRows w-100">
                                             <thead>
                                                 <tr>
@@ -750,15 +718,17 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                               
+
                                                 <tr>
                                                     <!-- <td><a
                                                         href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
                                                 </td> -->
-                                                    <td class=" "><a href>Home
+                                                    <td class=" ">
+                                                        <button type="button" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -766,23 +736,56 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <!-- <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted1"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted1"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div> -->
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted1"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted1"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -790,24 +793,36 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
+                                                        <div
+                                                        class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                        <div class="check-button thumb-btn thumb-up">
+                                                            <label>
+                                                                <input type="radio" value=""
+                                                                    name="Interseted2"><span>
+                                                                    <ion-icon name="thumbs-up"
+                                                                        class="thumb-line"></ion-icon>
+                                                                </span>
+                                                            </label>
                                                         </div>
+                                                        <div class="check-button thumb-btn thumb-down">
+                                                            <label>
+                                                                <input type="radio" value=""
+                                                                    name="Interseted2"><span>
+                                                                    <ion-icon name="thumbs-down"
+                                                                        class="thumb-line"></ion-icon>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
                                                     </td>
                                                 </tr>
-                                                
+
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -815,23 +830,35 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted3"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted3"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -839,23 +866,35 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted4"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted4"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -863,137 +902,25 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted5"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <!-- <td><a
-                                                        href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
-                                                </td> -->
-                                                    <td class=" "><a href>Home
-                                                            Care Aide with
-                                                            Dementia
-                                                            Experience</a>
-                                                    </td>
-                                                    <td>Wayne, PA
-                                                    </td>
-                                                    <td>6</td>
-                                                    <td>USD $17.00/Hr.</td>
-                                                    <td>USD $21.00/Hr.</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=" "><a href>Home
-                                                            Care Aide with
-                                                            Dementia
-                                                            Experience</a>
-                                                    </td>
-                                                    <td>Wayne, PA
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>USD $17.00/Hr.</td>
-                                                    <td>USD $21.00/Hr.</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=" "><a href>Home
-                                                            Care Aide with
-                                                            Dementia
-                                                            Experience</a>
-                                                    </td>
-                                                    <td>Wayne, PA
-                                                    </td>
-                                                    <td>9</td>
-                                                    <td>USD $17.00/Hr.</td>
-                                                    <td>USD $21.00/Hr.</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=" "><a href>Home
-                                                            Care Aide with
-                                                            Dementia
-                                                            Experience</a>
-                                                    </td>
-                                                    <td>Wayne, PA
-                                                    </td>
-                                                    <td>2</td>
-                                                    <td>USD $17.00/Hr.</td>
-                                                    <td>USD $21.00/Hr.</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class=" "><a href>Home
-                                                            Care Aide with
-                                                            Dementia
-                                                            Experience</a>
-                                                    </td>
-                                                    <td>Wayne, PA
-                                                    </td>
-                                                    <td>9</td>
-                                                    <td>USD $17.00/Hr.</td>
-                                                    <td>USD $21.00/Hr.</td>
-                                                    <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
-                                                            </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted5"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1002,10 +929,11 @@
                                                     <!-- <td><a
                                                         href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
                                                 </td> -->
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -1013,23 +941,35 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted6"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted6"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -1037,23 +977,35 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted7"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted7"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -1061,14 +1013,97 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted8"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted8"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</button>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted9"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted9"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</button>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>9</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted10"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted10"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1077,10 +1112,11 @@
                                                     <!-- <td><a
                                                         href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
                                                 </td> -->
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -1088,23 +1124,35 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted11"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted11"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -1112,23 +1160,35 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted12"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted12"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
                                                 </tr>
                                                 <tr>
-                                                    <td class=" "><a href>Home
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
                                                             Care Aide with
                                                             Dementia
-                                                            Experience</a>
+                                                            Experience</button>
                                                     </td>
                                                     <td>Wayne, PA
                                                     </td>
@@ -1136,14 +1196,136 @@
                                                     <td>USD $17.00/Hr.</td>
                                                     <td>USD $21.00/Hr.</td>
                                                     <td>
-                                                        <div class="d-flex justify-content-center ">
-                                                            <div class="thumb-up me-3 thumb">
-                                                                <ion-icon name="thumbs-up-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted12"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                            <div class="thumb-down thumb">
-                                                                <ion-icon name="thumbs-down-outline"
-                                                                    class="thumb-line"></ion-icon>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted12"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <!-- <td><a
+                                                        href="http://localhost:8080/v/viewrole.php?id=D29FC45D-0D17-B731-6FC8-E014BAAFD31F">View</a>
+                                                </td> -->
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</button>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>6</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted14"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted14"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</button>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>2</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted15"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted15"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" "><button type="submit" data-bs-toggle="modal"
+                                                            data-bs-target="#detail-modal">Home
+                                                            Care Aide with
+                                                            Dementia
+                                                            Experience</button>
+                                                    </td>
+                                                    <td>Wayne, PA
+                                                    </td>
+                                                    <td>9</td>
+                                                    <td>USD $17.00/Hr.</td>
+                                                    <td>USD $21.00/Hr.</td>
+                                                    <td>
+                                                        <div
+                                                            class="col-lg-12 d-flex   radio-button-row justify-content-center ">
+                                                            <div class="check-button thumb-btn thumb-up">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted16"><span>
+                                                                        <ion-icon name="thumbs-up"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="check-button thumb-btn thumb-down">
+                                                                <label>
+                                                                    <input type="radio" value=""
+                                                                        name="Interseted16"><span>
+                                                                        <ion-icon name="thumbs-down"
+                                                                            class="thumb-line"></ion-icon>
+                                                                    </span>
+                                                                </label>
                                                             </div>
                                                         </div>
                                                     </td>
@@ -1219,7 +1401,7 @@
                                         </div>
                                         <div class="buttons mt-4">
                                             <a class="prev__btn" onclick="prevForm();">Back</a>
-                                            <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                            <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal"
                                                 class="nxt__btn  ms-auto border-0  ">Done</button>
                                         </div>
 
@@ -1253,12 +1435,210 @@
 
                     <img src="images/flat-round-check-mark-green-600nw-652023034.webp" alt class="img-fluid mx-auto "
                         width="130" height="130">
+                    </div>
+                    <h3 class="popup-heading text-center ">Thank You</h3>
+                    <p class="text-center popup-text mb-4">
+                        We Look Forward to the meeting on <span class="text-primary">05-02-2024</span> at <span
+                            class="text-primary ">5PM</span>.
+                    </p>
+               
+
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="detail-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-dialog-lg">
+            <div class="modal-content px-2">
+                <div class="modal-header mb-0 pb-2">
+                    <h3 class="mb-0 pb-0">Details</h3>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <h3 class="popup-heading text-center ">Thank You</h3>
-                <p class="text-center popup-text mb-4">
-                    We Look Forward to the meeting on <span class="text-primary">05-02-2024</span> at <span
-                        class="text-primary ">5PM</span>.
-                </p>
+                <div class="modal-body ">
+                    <h5 class="mb-2 pb-0 ">Name</h5>
+                    <p class="pop-text">
+                        Caregiver with Personal Care Experience
+                    </p>
+
+                    <h5 class="mb-2 pb-0 mt-4">Category</h5>
+                    <p class="pop-text">
+                        Healthcare Support
+                    </p>
+
+                    <h5 class="mb-2 pb-0 mt-4">Type</h5>
+                    <p class="pop-text">
+                        Part Time / Full Time
+                    </p>
+
+                    <h5 class="mb-2 pb-0 mt-4">Offering</h5>
+                    <ul>
+                        <li class="pop-text">
+                            Flexible Schedules
+
+                        </li>
+                        <li class="pop-text">
+                            Competitive wages
+
+                        </li>
+                        <li class="pop-text">
+
+                            Paid Training - Virtual/Online/Hands-On classes
+
+                        </li>
+                        <li class="pop-text">
+
+                            Benefits - Medical,Dental, Vision and Mileage Reimbursement
+
+                        </li>
+                        <li class="pop-text">
+
+                            401K with employer match
+
+                        </li>
+                        <li class="pop-text">
+
+                            Employer paid life insurance
+
+                        </li>
+                        <li class="pop-text">
+
+                            Employer paid
+
+                        </li>
+                        <li class="pop-text">
+
+                            Virtual Tele-Health Appointments
+
+                        </li>
+                        <li class="pop-text">
+
+                            Year-round caregiver recognition programs & appreciation days
+                        </li>
+                        <li class="pop-text">
+                            24/7 Dedicated
+                        </li>
+                        <li class="pop-text">
+                            Caregiver Support Team"
+                        </li>
+                    </ul>
+
+                    <h5 class="mb-2 pb-0 mt-4">Responsibilities/Essential Functions:</h5>
+                    <ul>
+                        <li class="pop-text">
+                            Delivering exceptional care to the dedicated client in theirhome
+
+                        </li>
+                        <li class="pop-text">
+                            Help execute comprehensive personalized weekly schedules and care plans Complete
+                            daily tasks in a safe and professional manner (ADLs)
+                        </li>
+                        <li class="pop-text">
+
+
+                            Supply personal companionship,
+                            remaining actively engaged with each client by providing ongoing social & emotional support
+
+                        </li>
+                        <li class="pop-text">
+
+                            Assist with personal care activities to include personal hygiene, mobility assistance,
+                            incontinence care, light housekeeping, feeding and meal preparation Keeporder, safety and
+                            client enjoyment top of mind at all times
+
+
+                        </li>
+                        <li class="pop-text">
+
+                            Provide transportation to and from appointments as needed
+
+
+                        </li>
+                        <li class="pop-text">
+
+                            Administrative functions such as documentation of completion of tasks and report changes in
+                            the client\\u2019s physical condition, mental capability or behavior
+
+                        </li>
+
+                    </ul>
+
+                    <h5 class="mb-2 pb-0 mt-4">Location</h5>
+                    <p class="pop-text">
+                        City: <span>West Brand</span>
+                        State: <span>WI</span><br>
+                        Country: <span>US</span>
+                    </p>
+
+                    <h5 class="mb-2 pb-0 mt-4">Class</h5>
+                    <p class="pop-text">
+                        Caregiver - CNA / PCA / HHA
+                    </p>
+                    <h5 class="mb-2 pb-0 mt-4">ZIP</h5>
+                    <p class="pop-text">
+                        19085
+                    </p>
+
+
+
+                    <h5 class="mb-2 pb-0 mt-4">Qualifications:</h5>
+                    <ul>
+                        <li class="pop-text">
+                            Empathy, compassion and kindness a MUST
+
+                        </li>
+                        <li class="pop-text">
+                            Over the age of 18 & authorized to work in U.S.
+
+                        </li>
+                        <li class="pop-text">
+
+                            Professional / Character References
+
+
+                        </li>
+                        <li class="pop-text">
+                            Pass Criminal Background Check
+
+                        </li>
+                        <li class="pop-text">
+                            Show Valid (not expired) Identification
+
+
+                        </li>
+                        <li class="pop-text">
+                            Bank Account for Direct Deposit
+
+
+                        </li>
+                        <li class="pop-text">
+                            SmartPhone for Care Plan, Scheduling & Payroll
+
+
+                        </li>
+                        <li class="pop-text">
+
+                            Attend & Complete In-Person Orientation
+
+                        </li>
+                        <li class="pop-text">
+
+                            Attend & Complete In-Person Orientation
+
+
+                        </li>
+                        <li class="pop-text">
+
+                            Must be reliable, dependable and on-time.
+
+                        </li>
+                        <li class="pop-text">
+
+                            Must have a reliable means of transportation to get to and from work.
+
+                        </li>
+
+                    </ul>
+                </div>
+
 
             </div>
         </div>
