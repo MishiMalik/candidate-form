@@ -263,6 +263,7 @@ hr {
     font-size: 14px;
     font-weight: 500;
     text-decoration: none;
+    border: none;
 }
 
 .form-select {
@@ -333,8 +334,7 @@ p.form-check-label {
 }
 
 .nxt__btn:hover {
-    transform: scale(1.03);
-    background: var(--primary-color);
+    background: var(--secondery-color);
     cursor: pointer;
 }
 
@@ -431,9 +431,10 @@ table.paleBlueRows {
     color: black;
 }
 .thumb-btn label span{
-    font-size: 22px !important;
+    font-size: 26px !important;
     color: gray !important;
     padding: 0px  3px!important;
+    line-height: 14px;
 }
 
 .check-button label input {
@@ -595,6 +596,7 @@ table.paleBlueRows tfoot td {
 
 }
 
+
 /*------------------------------- form-2 design --------------------*/
 
 .selection {
@@ -658,7 +660,42 @@ table.paleBlueRows tfoot td {
     background-color: var(--primary-color);
     border-radius: 4px;
 }
+.matching-card{
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 15px 20px 20px 15px;
+    border-radius: 4px;
+    position: relative;
+}
 
+.matching-card  span{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+.matching-card  button{
+    font-size: 18px;
+    font-weight: 500;
+    color: black;
+    padding: 0;
+    text-decoration: underline;
+    border: none;
+    background-color: transparent;
+    color:black;
+    text-align: left;
+}
+.matching-card  button:hover{
+    color: var(--primary-color);
+}
+.matching-card-text span{
+    font-weight: 500;
+    font-size: 16px;
+    color: black ;
+}
+.matching-card-text{
+    font-size: 16px;
+    font-weight: 400;
+}
 /*-------------------------------------- form-4 design----------------------------------------- */
 .slider {
     display: flex;
@@ -927,5 +964,31 @@ table.paleBlueRows tfoot td {
     .progress__bar__container ul .active::before {
         transform: rotate(90deg);
     }
+    .matching-card{
+        padding-bottom: 50px;
+    }
+    .like-dislike{
+        position: absolute;
+        bottom: 15px;
+        right: 20px;
 
+    }
+
+    
+.matching-card  span{
+    font-size: 16px;
+}
+.matching-card  button{
+    font-size: 16px;
+}
+
+.matching-card-text span{
+    font-size: 14px;
+}
+.matching-card-text{
+    font-size: 14px;
+}
+.pop-text{
+    font-size: 14px;
+}
 }
